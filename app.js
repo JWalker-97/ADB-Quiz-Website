@@ -6,19 +6,20 @@ const nextButton = document.getElementById('next-btn');
 const restartButton = document.getElementById('restart-btn');
 const startPage = document.getElementById('start-page');
 const questionContainerElement = document.getElementById('question-container');
+const questionHeaderElement = document.getElementById('question-header');
 const topicHeadingElement = document.getElementById('topic-heading');
+const questionNumberElement = document.getElementById('question-number');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 const progressBarFill = document.getElementById('progress-bar-fill');
 const resultContainer = document.getElementById('result-container');
 const scoreElement = document.getElementById('score');
+const feedbackElement = document.getElementById('feedback');
 
-// Variables
 let questions = [];
 let currentQuestionIndex = 0;
 let score = 0;
 
-// Event Listeners
 startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++;
@@ -70,14 +71,23 @@ function showQuestion() {
   const currentQuestion = questions[currentQuestionIndex];
 
   // Update topic heading based on current question index
-  const topic = getTopicForQuestion(currentQuestionIndex);
-  topicHeadingElement.innerText = `Topic: ${topic} - ${currentQuestion.topic}`;
+  const topicCode = getTopicForQuestion(currentQuestionIndex);
+  const topicName = currentQuestion.topic;
+  topicHeadingElement.innerText = `${topicCode}: ${topicName}`;
+
+  // Update question number
+  questionNumberElement.innerText = `Q${currentQuestionIndex + 1}`;
 
   questionElement.innerText = currentQuestion.question;
-  currentQuestion.answers.forEach((answer) => {
+
+  // Shuffle answer options
+  const shuffledAnswers = shuffleArray([...currentQuestion.answers]);
+
+  shuffledAnswers.forEach((answer) => {
     const button = document.createElement('button');
     button.innerText = answer.text;
     button.classList.add('btn');
+    button.setAttribute('role', 'button');
     if (answer.correct) {
       button.dataset.correct = answer.correct;
     }
@@ -100,13 +110,16 @@ function resetState() {
 function selectAnswer(e) {
   const selectedButton = e.target;
   const correct = selectedButton.dataset.correct === 'true';
+
+  // Mark selected button
+  selectedButton.classList.add('selected');
+
   if (correct) {
     score++;
   }
-  setStatusClass(selectedButton, correct);
   Array.from(answerButtonsElement.children).forEach((button) => {
-    button.disabled = true;
     setStatusClass(button, button.dataset.correct === 'true');
+    button.disabled = true;
   });
   nextButton.classList.remove('hide');
 }
@@ -116,6 +129,24 @@ function showResult() {
   questionContainerElement.classList.add('hide');
   resultContainer.classList.remove('hide');
   scoreElement.innerText = `You scored ${score} out of ${questions.length}!`;
+
+  const percentage = (score / questions.length) * 100;
+  let feedback = '';
+  let color = '';
+
+  if (percentage >= 80) {
+    feedback = 'Excellent work! You have a strong understanding of the material.';
+    color = '#28a745'; // Green
+  } else if (percentage >= 60) {
+    feedback = 'Good effort! Review the material to improve your understanding.';
+    color = '#ffc107'; // Amber
+  } else {
+    feedback = 'You may need to focus more on these areas. Consider revisiting the material.';
+    color = '#dc3545'; // Red
+  }
+
+  feedbackElement.innerText = feedback;
+  scoreElement.style.color = color;
 }
 
 // Restart Game
@@ -143,13 +174,11 @@ function shuffleArray(array) {
   return array.sort(() => Math.random() - 0.5);
 }
 
-// Update Progress Bar
 function updateProgressBar() {
   const progressPercentage = ((currentQuestionIndex) / questions.length) * 100;
   progressBarFill.style.width = `${progressPercentage}%`;
 }
 
-// Get Topic for Current Question Index
 function getTopicForQuestion(index) {
   if (index < 10) {
     return 'B1';
