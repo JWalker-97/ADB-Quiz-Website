@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 { text: "15 meters", correct: false }
             ]
         },
-        // Additional placeholder questions to make a total of 50 questions
+        // Add 48 more questions in similar fashion
         ...Array.from({ length: 48 }, (_, i) => ({
             question: `Placeholder question ${i + 3}`,
             answers: [
@@ -83,8 +83,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Handle the answer selection
     function selectAnswer(button, correct) {
         Array.from(answerButtons.children).forEach(btn => {
-            btn.disabled = true;
-            btn.classList.add(correct ? 'correct' : 'wrong');
+            btn.disabled = true; // Disable all buttons after selection
+            if (btn === button) {
+                btn.classList.add(correct ? 'correct' : 'wrong');
+            }
         });
 
         if (correct) {
@@ -92,9 +94,10 @@ document.addEventListener('DOMContentLoaded', () => {
             resultContainer.innerText = 'Correct!';
         } else {
             incorrect++;
-            resultContainer.innerText = 'Incorrect. Try again.';
+            resultContainer.innerText = 'Incorrect.';
         }
 
+        // Make sure to show the Next button
         nextButton.classList.remove('hide');
     }
 
