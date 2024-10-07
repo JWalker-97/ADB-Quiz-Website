@@ -1,25 +1,28 @@
+/* General Page Styling */
 body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f9;
+    background: url('https://www.publicdomainpictures.net/pictures/270000/velka/fire-background.jpg') no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
+    color: white;
 }
 
 .quiz-container {
-    background-color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
     max-width: 600px;
     text-align: center;
 }
 
 h1 {
-    font-size: 1.8rem;
-    color: #333;
+    font-size: 2rem;
+    color: #FFD700;
 }
 
 .btn-container {
@@ -29,7 +32,7 @@ h1 {
 .btn {
     padding: 10px 20px;
     margin: 5px;
-    background-color: #007BFF;
+    background-color: #FF4500;
     color: white;
     border: none;
     border-radius: 5px;
@@ -38,7 +41,11 @@ h1 {
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #FF6347;
+}
+
+.hide {
+    display: none;
 }
 
 .correct {
@@ -49,19 +56,15 @@ h1 {
     background-color: #F44336;
 }
 
-#next-btn {
-    margin-top: 15px;
-    display: none;
-}
-
 #result {
     margin-top: 20px;
     font-size: 1.2rem;
 }
 
-/* Progress Bar Styles */
+/* Progress Bar */
 #progress-container {
     margin-top: 20px;
+    color: #FFD700;
 }
 
 .progress-bar {

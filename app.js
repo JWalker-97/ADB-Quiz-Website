@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // DOM Elements
+    // DOM elements
     const questionContainer = document.getElementById('question');
     const answerButtons = document.getElementById('answer-buttons');
     const nextButton = document.getElementById('next-btn');
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 { text: "15 meters", correct: false }
             ]
         },
-        // Add 48 more questions in similar fashion
+        // Adding placeholder questions to fill 50 questions
         ...Array.from({ length: 48 }, (_, i) => ({
             question: `Placeholder question ${i + 3}`,
             answers: [
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         currentQuestionIndex = 0;
         score = 0;
         incorrect = 0;
-        nextButton.classList.add('hide');
+        nextButton.classList.add('hide'); // Hide next button initially
         updateProgress();
         showQuestion();
     }
@@ -62,6 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentQuestion = questions[currentQuestionIndex];
         questionContainer.innerText = currentQuestion.question;
 
+        // Create answer buttons
         currentQuestion.answers.forEach(answer => {
             const button = document.createElement('button');
             button.innerText = answer.text;
@@ -73,19 +74,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Reset the state for the next question
     function resetState() {
-        nextButton.classList.add('hide');
+        nextButton.classList.add('hide'); // Hide the Next button at the start of each question
         resultContainer.innerText = '';
         while (answerButtons.firstChild) {
-            answerButtons.removeChild(answerButtons.firstChild);
+            answerButtons.removeChild(answerButtons.firstChild); // Clear answer buttons
         }
     }
 
-    // Handle the answer selection
+    // Handle answer selection
     function selectAnswer(button, correct) {
         Array.from(answerButtons.children).forEach(btn => {
-            btn.disabled = true; // Disable all buttons after selection
+            btn.disabled = true; // Disable all buttons after selecting an answer
             if (btn === button) {
-                btn.classList.add(correct ? 'correct' : 'wrong');
+                btn.classList.add(correct ? 'correct' : 'wrong'); // Mark the selected button
             }
         });
 
@@ -94,20 +95,19 @@ document.addEventListener('DOMContentLoaded', () => {
             resultContainer.innerText = 'Correct!';
         } else {
             incorrect++;
-            resultContainer.innerText = 'Incorrect.';
+            resultContainer.innerText = 'Incorrect!';
         }
 
-        // Make sure to show the Next button
-        nextButton.classList.remove('hide');
+        nextButton.classList.remove('hide'); // Show the Next button after an answer is selected
     }
 
     // Move to the next question when "Next" is clicked
     nextButton.addEventListener('click', () => {
         currentQuestionIndex++;
         if (currentQuestionIndex < questions.length) {
-            showQuestion();
+            showQuestion(); // Show next question
         } else {
-            showFinalResult();
+            showFinalResult(); // Show final result when the quiz is over
         }
         updateProgress();
     });
@@ -121,9 +121,9 @@ document.addEventListener('DOMContentLoaded', () => {
         progressWrong.style.width = `${wrongPercentage}%`;
     }
 
-    // Display the final result after all questions are answered
+    // Show final result after the quiz ends
     function showFinalResult() {
         resultContainer.innerText = `Quiz complete! You got ${score} correct out of ${totalQuestions}.`;
-        nextButton.classList.add('hide');
+        nextButton.classList.add('hide'); // Hide Next button after completion
     }
 });
