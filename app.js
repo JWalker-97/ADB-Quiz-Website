@@ -30,10 +30,10 @@ const questions = [
             { text: "15 meters", correct: false }
         ]
     },
-    // Add more questions here following this format
+    // Add more questions here following this format to complete 50 questions
 ];
 
-// Add additional questions here to reach 50 questions
+// Add additional placeholder questions to reach 50 questions
 for (let i = 2; i < 50; i++) {
     questions.push({
         question: `Question ${i + 1}: What is the requirement related to fire safety for section ${i}?`,
@@ -53,14 +53,14 @@ function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
     incorrect = 0;
-    nextButton.classList.add('hide');
+    nextButton.classList.add('hide');  // Ensure the "Next" button is hidden initially
     updateProgress();
     showQuestion();
 }
 
 // Display the next question
 function showQuestion() {
-    resetState();
+    resetState();  // Clear previous answers
     const currentQuestion = questions[currentQuestionIndex];
     
     // Display the question
@@ -78,7 +78,7 @@ function showQuestion() {
 
 // Reset the quiz state (remove old buttons, etc.)
 function resetState() {
-    nextButton.classList.add('hide');
+    nextButton.classList.add('hide');  // Hide the "Next" button at the start of each question
     resultContainer.innerText = '';
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);  // Clear any existing answer buttons
@@ -99,19 +99,19 @@ function selectAnswer(button, correct) {
             incorrect++;
         }
     });
-    
-    nextButton.classList.remove('hide');  // Show next button after selection
+
+    nextButton.classList.remove('hide');  // Show the "Next" button after an answer is selected
 }
 
 // Move to the next question
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
-        showQuestion();
+        showQuestion();  // Show the next question
     } else {
-        showFinalResult();
+        showFinalResult();  // Show the final result after all questions
     }
-    updateProgress();
+    updateProgress();  // Update the progress bar after moving to the next question
 });
 
 // Update the progress bar
@@ -126,5 +126,5 @@ function updateProgress() {
 // Show final result after the quiz
 function showFinalResult() {
     resultContainer.innerText = `Quiz complete! You got ${score} correct out of ${totalQuestions}.`;
-    nextButton.classList.add('hide');
+    nextButton.classList.add('hide');  // Hide the "Next" button after the quiz ends
 }
