@@ -4,18 +4,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const answerButtons = document.getElementById('answer-buttons');
     const nextButton = document.getElementById('next-btn');
     const resultContainer = document.getElementById('result');
-    const progressCorrect = document.getElementById('progress-correct');
-    const progressWrong = document.getElementById('progress-wrong');
+    const progressSquares = document.getElementById('progress-squares');
 
     let currentQuestionIndex = 0;
     let score = 0;
     let incorrect = 0;
     const totalQuestions = 50;
+    const totalQuestionsPerSection = 10;
 
-    // Array of questions
+    // Initialize progress squares
+    for (let i = 0; i < totalQuestions; i++) {
+        const square = document.createElement('div');
+        square.classList.add('progress-square');
+        progressSquares.appendChild(square);
+    }
+
+    // Array of questions based on AD B
     const questions = [
+        // 10 Questions from B1
         {
-            question: "What is the minimum width of an escape route in a public building?",
+            question: "B1: What is the minimum width of an escape route in a public building?",
             answers: [
                 { text: "1.0 meter", correct: true },
                 { text: "0.8 meters", correct: false },
@@ -24,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ]
         },
         {
-            question: "What is the maximum travel distance to a protected stairway in a single direction?",
+            question: "B1: In a two-story building, what is the maximum travel distance for escape in one direction?",
             answers: [
                 { text: "9 meters", correct: true },
                 { text: "18 meters", correct: false },
@@ -32,17 +40,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 { text: "15 meters", correct: false }
             ]
         },
-        // Adding placeholder questions to fill 50 questions
-        ...Array.from({ length: 48 }, (_, i) => ({
-            question: `Placeholder question ${i + 3}`,
-            answers: [
-                { text: "Option 1", correct: i % 2 === 0 },
-                { text: "Option 2", correct: i % 2 !== 0 },
-                { text: "Option 3", correct: false },
-                { text: "Option 4", correct: false }
-            ]
-        }))
+        // Add additional questions for B1, B2, B3, B4, and B5 sections here
     ];
+
+    // Shuffle answers and randomize the correct one
+    function shuffleAnswers(question) {
+        const shuffledAnswers = [...question.answers];
+        for (let i = shuffledAnswers.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffledAnswers[i], shuffledAnswers[j]] = [shuffledAnswers[j], shuffledAnswers[i]];
+        }
+        return shuffledAnswers;
+    }
 
     // Start the quiz
     startQuiz();
@@ -62,8 +71,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentQuestion = questions[currentQuestionIndex];
         questionContainer.innerText = currentQuestion.question;
 
-        // Create answer buttons
-        currentQuestion.answers.forEach(answer => {
+        const shuffledAnswers = shuffleAnswers(currentQuestion);
+
+        shuffledAnswers.forEach(answer => {
             const button = document.createElement('button');
             button.innerText = answer.text;
             button.classList.add('btn');
@@ -74,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Reset the state for the next question
     function resetState() {
-        nextButton.classList.add('hide'); // Hide the Next button at the start of each question
+        nextButton.classList.add('hide');
         resultContainer.innerText = '';
         while (answerButtons.firstChild) {
             answerButtons.removeChild(answerButtons.firstChild); // Clear answer buttons
@@ -86,9 +96,12 @@ document.addEventListener('DOMContentLoaded', () => {
         Array.from(answerButtons.children).forEach(btn => {
             btn.disabled = true; // Disable all buttons after selecting an answer
             if (btn === button) {
-                btn.classList.add(correct ? 'correct' : 'wrong'); // Mark the selected button
+                btn.classList.add(correct ? 'correct' : 'wrong');
             }
         });
+
+        const progressSquare = document.getElementsByClassName('progress-square')[currentQuestionIndex];
+        progressSquare.classList.add(correct ? 'correct-square' : 'wrong-square');
 
         if (correct) {
             score++;
@@ -97,33 +110,3 @@ document.addEventListener('DOMContentLoaded', () => {
             incorrect++;
             resultContainer.innerText = 'Incorrect!';
         }
-
-        nextButton.classList.remove('hide'); // Show the Next button after an answer is selected
-    }
-
-    // Move to the next question when "Next" is clicked
-    nextButton.addEventListener('click', () => {
-        currentQuestionIndex++;
-        if (currentQuestionIndex < questions.length) {
-            showQuestion(); // Show next question
-        } else {
-            showFinalResult(); // Show final result when the quiz is over
-        }
-        updateProgress();
-    });
-
-    // Update the progress bar
-    function updateProgress() {
-        const correctPercentage = (score / totalQuestions) * 100;
-        const wrongPercentage = (incorrect / totalQuestions) * 100;
-
-        progressCorrect.style.width = `${correctPercentage}%`;
-        progressWrong.style.width = `${wrongPercentage}%`;
-    }
-
-    // Show final result after the quiz ends
-    function showFinalResult() {
-        resultContainer.innerText = `Quiz complete! You got ${score} correct out of ${totalQuestions}.`;
-        nextButton.classList.add('hide'); // Hide Next button after completion
-    }
-});

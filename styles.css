@@ -27,17 +27,21 @@ h1 {
 
 .btn-container {
     margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .btn {
     padding: 10px 20px;
-    margin: 5px;
+    margin: 10px;
     background-color: #FF4500;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 40%;
 }
 
 .btn:hover {
@@ -61,31 +65,28 @@ h1 {
     font-size: 1.2rem;
 }
 
-/* Progress Bar */
-#progress-container {
-    margin-top: 20px;
-    color: #FFD700;
-}
-
 .progress-bar {
-    width: 100%;
+    margin-top: 20px;
+}
+
+#progress-squares {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.progress-square {
+    width: 20px;
     height: 20px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
+    background-color: white;
+    border: 1px solid #FFD700;
+    margin: 2px;
 }
 
-.progress-segment {
-    height: 100%;
-}
-
-.correct {
+.correct-square {
     background-color: #4CAF50;
-    width: 0;
 }
 
-.wrong {
+.wrong-square {
     background-color: #F44336;
-    width: 0;
 }
