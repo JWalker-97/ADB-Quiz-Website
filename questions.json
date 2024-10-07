@@ -1,0 +1,3011 @@
+{
+  "B1": [
+    {
+      "topic": "B1: Means of Warning and Escape",
+      "question": "What is the minimum clear width for a doorway in an escape route?",
+      "answers": [
+        { "text": "750 mm", "correct": true },
+        { "text": "700 mm", "correct": false },
+        { "text": "850 mm", "correct": false },
+        { "text": "600 mm", "correct": false }
+      ]
+    },
+    {
+      "topic": "B1: Means of Warning and Escape",
+      "question": "In a residential building, what is the maximum travel distance to a protected escape route?",
+      "answers": [
+        { "text": "9 meters", "correct": false },
+        { "text": "18 meters", "correct": true },
+        { "text": "25 meters", "correct": false },
+        { "text": "30 meters", "correct": false }
+      ]
+    },
+    {
+      "topic": "B1: Means of Warning and Escape",
+      "question": "Which type of fire alarm system is typically used in a small residential building?",
+      "answers": [
+        { "text": "Grade A", "correct": false },
+        { "text": "Grade C", "correct": false },
+        { "text": "Grade D", "correct": true },
+        { "text": "Grade B", "correct": false }
+      ]
+    },
+    {
+      "topic": "B1: Means of Warning and Escape",
+      "question": "How often should emergency lighting be tested in a commercial building?",
+      "answers": [
+        { "text": "Weekly", "correct": false },
+        { "text": "Monthly", "correct": true },
+        { "text": "Annually", "correct": false },
+        { "text": "Bi-annually", "correct": false }
+      ]
+    },
+    {
+      "topic": "B1: Means of Warning and Escape",
+      "question": "What is the minimum width for an escape route in an office building?",
+      "answers": [
+        { "text": "900 mm", "correct": true },
+        { "text": "750 mm", "correct": false },
+        { "text": "1 meter", "correct": false },
+        { "text": "1.2 meters", "correct": false }
+      ]
+    },
+    {
+      "topic": "B1: Means of Warning and Escape",
+      "question": "What type of fire safety sign should be used for indicating escape routes?",
+      "answers": [
+        { "text": "Blue mandatory signs", "correct": false },
+        { "text": "Red prohibition signs", "correct": false },
+        { "text": "Green escape signs", "correct": true },
+        { "text": "Yellow warning signs", "correct": false }
+      ]
+    },
+    {
+      "topic": "B1: Means of Warning and Escape",
+      "question": "In a multi-story building, how many escape routes should be provided?",
+      "answers": [
+        { "text": "At least one", "correct": false },
+        { "text": "At least two", "correct": true },
+        { "text": "At least three", "correct": false },
+        { "text": "Only one if fire alarms are installed", "correct": false }
+      ]
+    },
+    {
+      "topic": "B1: Means of Warning and Escape",
+      "question": "What is the minimum duration of fire resistance required for doors in escape routes?",
+      "answers": [
+        { "text": "15 minutes", "correct": false },
+        { "text": "30 minutes", "correct": true },
+        { "text": "60 minutes", "correct": false },
+        { "text": "90 minutes", "correct": false }
+      ]
+    },
+    {
+      "topic": "B1: Means of Warning and Escape",
+      "question": "What should be the maximum travel distance in an industrial building before reaching a protected escape route?",
+      "answers": [
+        { "text": "25 meters", "correct": false },
+        { "text": "45 meters", "correct": true },
+        { "text": "60 meters", "correct": false },
+        { "text": "35 meters", "correct": false }
+      ]
+    },
+    {
+      "topic": "B1: Means of Warning and Escape",
+      "question": "Which document outlines the fire safety requirements for means of escape in the UK?",
+      "answers": [
+        { "text": "Approved Document C", "correct": false },
+        { "text": "Approved Document B", "correct": true },
+        { "text": "Approved Document D", "correct": false },
+        { "text": "Approved Document E", "correct": false }
+      ]
+    },
+    {
+      "topic": "B1: Means of Warning and Escape",
+      "question": "In an assembly building, what should the number of exits be based on?",
+      "answers": [
+        { "text": "Building height", "correct": false },
+        { "text": "Building area", "correct": false },
+        { "text": "Maximum occupancy", "correct": true },
+        { "text": "Number of floors", "correct": false }
+      ]
+    },
+    {
+      "topic": "B1: Means of Warning and Escape",
+      "question": "How should emergency lighting be powered in case of mains failure?",
+      "answers": [
+        { "text": "By the building's generator", "correct": false },
+        { "text": "By a battery backup", "correct": true },
+        { "text": "By solar panels", "correct": false },
+        { "text": "By hand-cranked power", "correct": false }
+      ]
+    },
+    {
+      "topic": "B1: Means of Warning and Escape",
+      "question": "What is a refuge area in fire safety?",
+      "answers": [
+        { "text": "A place for firefighting equipment", "correct": false },
+        { "text": "An external assembly point", "correct": false },
+        { "text": "A safe place for disabled persons to wait for assistance", "correct": true },
+        { "text": "A storage room", "correct": false }
+      ]
+    },
+    {
+      "topic": "B1: Means of Warning and Escape",
+      "question": "What is the maximum allowable travel distance to a final exit in a single escape route?",
+      "answers": [
+        { "text": "15 meters", "correct": false },
+        { "text": "18 meters", "correct": true },
+        { "text": "30 meters", "correct": false },
+        { "text": "45 meters", "correct": false }
+      ]
+    },
+    {
+      "topic": "B1: Means of Warning and Escape",
+      "question": "What is the primary purpose of fire doors in escape routes?",
+      "answers": [
+        { "text": "To provide an exit", "correct": false },
+        { "text": "To prevent smoke and fire spread", "correct": true },
+        { "text": "To support the structure", "correct": false },
+        { "text": "To provide decoration", "correct": false }
+      ]
+    },
+    {
+      "topic": "B1: Means of Warning and Escape",
+      "question": "In a building with more than one floor, what should be used to provide an alternative means of escape?",
+      "answers": [
+        { "text": "An external ladder", "correct": false },
+        { "text": "A protected stairway", "correct": true },
+        { "text": "A rope", "correct": false },
+        { "text": "A fireman's pole", "correct": false }
+      ]
+    },
+    {
+      "topic": "B1: Means of Warning and Escape",
+      "question": "What is the recommended maximum length for dead-end escape routes in residential buildings?",
+      "answers": [
+        { "text": "7.5 meters", "correct": true },
+        { "text": "10 meters", "correct": false },
+        { "text": "15 meters", "correct": false },
+        { "text": "20 meters", "correct": false }
+      ]
+    },
+    {
+      "topic": "B1: Means of Warning and Escape",
+      "question": "What is the purpose of an emergency exit push bar?",
+      "answers": [
+        { "text": "To lock the door during emergencies", "correct": false },
+        { "text": "To allow rapid exit without a key", "correct": true },
+        { "text": "To slow down evacuation", "correct": false },
+        { "text": "To trigger the fire alarm", "correct": false }
+      ]
+    },
+    {
+      "topic": "B1: Means of Warning and Escape",
+      "question": "Which fire safety system is commonly installed to provide early warning of fire in multi-occupancy buildings?",
+      "answers": [
+        { "text": "Sprinkler system", "correct": false },
+        { "text": "Smoke control system", "correct": false },
+        { "text": "Fire detection and alarm system", "correct": true },
+        { "text": "Fire extinguishers", "correct": false }
+      ]
+    },
+    {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "What is the maximum allowable travel distance to a final exit in a single escape route?",
+        "answers": [
+          { "text": "15 meters", "correct": false },
+          { "text": "18 meters", "correct": true },
+          { "text": "30 meters", "correct": false },
+          { "text": "45 meters", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "What is the primary purpose of fire doors in escape routes?",
+        "answers": [
+          { "text": "To provide an exit", "correct": false },
+          { "text": "To prevent smoke and fire spread", "correct": true },
+          { "text": "To support the structure", "correct": false },
+          { "text": "To provide decoration", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "In a building with more than one floor, what should be used to provide an alternative means of escape?",
+        "answers": [
+          { "text": "An external ladder", "correct": false },
+          { "text": "A protected stairway", "correct": true },
+          { "text": "A rope", "correct": false },
+          { "text": "A fireman's pole", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "What is the recommended maximum length for dead-end escape routes in residential buildings?",
+        "answers": [
+          { "text": "7.5 meters", "correct": true },
+          { "text": "10 meters", "correct": false },
+          { "text": "15 meters", "correct": false },
+          { "text": "20 meters", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "What is the purpose of an emergency exit push bar?",
+        "answers": [
+          { "text": "To lock the door during emergencies", "correct": false },
+          { "text": "To allow rapid exit without a key", "correct": true },
+          { "text": "To slow down evacuation", "correct": false },
+          { "text": "To trigger the fire alarm", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "Which fire safety system is commonly installed to provide early warning of fire in multi-occupancy buildings?",
+        "answers": [
+          { "text": "Sprinkler system", "correct": false },
+          { "text": "Smoke control system", "correct": false },
+          { "text": "Fire detection and alarm system", "correct": true },
+          { "text": "Fire extinguishers", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "What should be the width of a protected stairway for an escape route serving up to 150 people?",
+        "answers": [
+          { "text": "900 mm", "correct": true },
+          { "text": "600 mm", "correct": false },
+          { "text": "1,200 mm", "correct": false },
+          { "text": "1,500 mm", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "How often should fire drills be conducted in schools?",
+        "answers": [
+          { "text": "Every month", "correct": false },
+          { "text": "Every term", "correct": true },
+          { "text": "Twice a year", "correct": false },
+          { "text": "Once a year", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "Which system is best suited for providing real-time visual warning during fire evacuation?",
+        "answers": [
+          { "text": "Audio fire alarm", "correct": false },
+          { "text": "Emergency lighting system", "correct": false },
+          { "text": "Visual alarm system", "correct": true },
+          { "text": "Sprinkler system", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "In a non-residential building, which type of alarm system should be used to warn all occupants in the event of a fire?",
+        "answers": [
+          { "text": "Grade A", "correct": true },
+          { "text": "Grade D", "correct": false },
+          { "text": "Grade F", "correct": false },
+          { "text": "Grade C", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "What is the key requirement for an inner room in terms of escape routes?",
+        "answers": [
+          { "text": "Direct access to the final exit", "correct": false },
+          { "text": "A vision panel to an access room", "correct": true },
+          { "text": "Having windows", "correct": false },
+          { "text": "An internal escape route", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "How should emergency lighting be installed in escape routes?",
+        "answers": [
+          { "text": "At every fire exit door", "correct": false },
+          { "text": "Along the entire route", "correct": true },
+          { "text": "Only at stairways", "correct": false },
+          { "text": "Only at final exits", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "What should the exit door width be in a school with more than 100 occupants?",
+        "answers": [
+          { "text": "850 mm", "correct": false },
+          { "text": "900 mm", "correct": false },
+          { "text": "1,050 mm", "correct": true },
+          { "text": "1,200 mm", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "How long should escape routes be maintained free of obstructions?",
+        "answers": [
+          { "text": "At all times", "correct": true },
+          { "text": "During business hours", "correct": false },
+          { "text": "Only at night", "correct": false },
+          { "text": "Only during fire drills", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "Which safety feature must be installed for disabled persons in multi-story buildings?",
+        "answers": [
+          { "text": "Elevators", "correct": false },
+          { "text": "Refuge areas", "correct": true },
+          { "text": "Fire extinguishers", "correct": false },
+          { "text": "Ramps", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "In which part of the escape route should signage be most clearly displayed?",
+        "answers": [
+          { "text": "At the start", "correct": false },
+          { "text": "Throughout the entire route", "correct": true },
+          { "text": "At the final exit", "correct": false },
+          { "text": "At staircases", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "Which of the following is a primary factor when determining the number of emergency exits required?",
+        "answers": [
+          { "text": "Building's aesthetic design", "correct": false },
+          { "text": "Occupancy level", "correct": true },
+          { "text": "Building's total height", "correct": false },
+          { "text": "Number of windows", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "What should the minimum fire resistance be for walls surrounding escape routes in commercial buildings?",
+        "answers": [
+          { "text": "60 minutes", "correct": true },
+          { "text": "30 minutes", "correct": false },
+          { "text": "15 minutes", "correct": false },
+          { "text": "45 minutes", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "How far apart should fire safety signs be placed in corridors?",
+        "answers": [
+          { "text": "Every 5 meters", "correct": false },
+          { "text": "Every 10 meters", "correct": true },
+          { "text": "Every 20 meters", "correct": false },
+          { "text": "Every 30 meters", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "Which feature is essential in all fire escape stairways?",
+        "answers": [
+          { "text": "Natural lighting", "correct": false },
+          { "text": "Non-slip surfaces", "correct": true },
+          { "text": "Carpeted floors", "correct": false },
+          { "text": "Decorative railings", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "What is the minimum fire resistance for floors in escape routes?",
+        "answers": [
+          { "text": "60 minutes", "correct": true },
+          { "text": "30 minutes", "correct": false },
+          { "text": "90 minutes", "correct": false },
+          { "text": "120 minutes", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "Which material is often used to ensure fire resistance in walls along escape routes?",
+        "answers": [
+          { "text": "Gypsum board", "correct": true },
+          { "text": "Wooden paneling", "correct": false },
+          { "text": "Glass", "correct": false },
+          { "text": "Plastic cladding", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "In which situation is a secondary escape route required?",
+        "answers": [
+          { "text": "In all buildings", "correct": false },
+          { "text": "When the primary route is more than 18 meters long", "correct": true },
+          { "text": "In single-story buildings", "correct": false },
+          { "text": "In buildings with fewer than 10 occupants", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "What type of emergency escape signage is required for rooms larger than 60 square meters?",
+        "answers": [
+          { "text": "Illuminated signage", "correct": true },
+          { "text": "Reflective signage", "correct": false },
+          { "text": "Painted signage", "correct": false },
+          { "text": "No signage is required", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "What is the purpose of a protected lobby in fire escape routes?",
+        "answers": [
+          { "text": "To store firefighting equipment", "correct": false },
+          { "text": "To prevent the spread of fire and smoke", "correct": true },
+          { "text": "To provide a seating area", "correct": false },
+          { "text": "To act as a delivery bay", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "When designing escape routes, what is the recommended maximum travel distance in a healthcare facility?",
+        "answers": [
+          { "text": "9 meters", "correct": false },
+          { "text": "15 meters", "correct": true },
+          { "text": "20 meters", "correct": false },
+          { "text": "30 meters", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "In which situation should a refuge area be provided?",
+        "answers": [
+          { "text": "For buildings over 4 stories", "correct": true },
+          { "text": "In single-story buildings", "correct": false },
+          { "text": "In all buildings", "correct": false },
+          { "text": "For buildings with fewer than 50 occupants", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "In a high-rise building, what is the main consideration for escape route design?",
+        "answers": [
+          { "text": "Building aesthetics", "correct": false },
+          { "text": "Height and number of occupants", "correct": true },
+          { "text": "Presence of elevators", "correct": false },
+          { "text": "Number of windows", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "What should be the minimum width of corridors used as escape routes in public buildings?",
+        "answers": [
+          { "text": "900 mm", "correct": true },
+          { "text": "750 mm", "correct": false },
+          { "text": "1000 mm", "correct": false },
+          { "text": "600 mm", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "What is the maximum allowable length of a dead-end corridor in office buildings?",
+        "answers": [
+          { "text": "15 meters", "correct": false },
+          { "text": "12 meters", "correct": true },
+          { "text": "10 meters", "correct": false },
+          { "text": "20 meters", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "In a residential building, how many exits are required for an occupancy of more than 50 people?",
+        "answers": [
+          { "text": "At least one", "correct": false },
+          { "text": "At least two", "correct": true },
+          { "text": "At least three", "correct": false },
+          { "text": "Only one if fire alarms are installed", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "What is the key factor in determining the number of stairs in a building for escape purposes?",
+        "answers": [
+          { "text": "Number of occupants", "correct": true },
+          { "text": "Height of the building", "correct": false },
+          { "text": "Number of windows", "correct": false },
+          { "text": "Size of the stairwell", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "How often should a fire risk assessment be carried out in commercial buildings?",
+        "answers": [
+          { "text": "Every 2 years", "correct": false },
+          { "text": "Annually", "correct": true },
+          { "text": "Every 5 years", "correct": false },
+          { "text": "Once when the building is first occupied", "correct": false }
+        ]
+      },
+      {
+        "topic": "B1: Means of Warning and Escape",
+        "question": "What is the recommended maximum travel distance in escape routes in educational buildings?",
+        "answers": [
+          { "text": "15 meters", "correct": false },
+          { "text": "18 meters", "correct": true },
+          { "text": "25 meters", "correct": false },
+          { "text": "30 meters", "correct": false }
+        ]
+      }
+    ],
+
+
+
+
+
+
+
+
+
+    "B2": [
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which material is most commonly used for fire-resistant internal wall linings?",
+        "answers": [
+          { "text": "Plasterboard", "correct": true },
+          { "text": "Wood paneling", "correct": false },
+          { "text": "Metal sheeting", "correct": false },
+          { "text": "Plastic cladding", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "What is the primary factor affecting the fire spread of internal wall linings?",
+        "answers": [
+          { "text": "Thickness of the material", "correct": false },
+          { "text": "Surface spread of flame", "correct": true },
+          { "text": "Material color", "correct": false },
+          { "text": "Reflectivity", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which fire classification indicates the highest performance for internal wall linings?",
+        "answers": [
+          { "text": "Class 0", "correct": true },
+          { "text": "Class 1", "correct": false },
+          { "text": "Class 2", "correct": false },
+          { "text": "Class 3", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which regulation deals with the fire performance of wall and ceiling linings in the UK?",
+        "answers": [
+          { "text": "Approved Document B", "correct": true },
+          { "text": "Approved Document C", "correct": false },
+          { "text": "Approved Document D", "correct": false },
+          { "text": "Approved Document F", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which of the following is considered a highly combustible internal lining material?",
+        "answers": [
+          { "text": "Plastic cladding", "correct": true },
+          { "text": "Metal panels", "correct": false },
+          { "text": "Concrete blocks", "correct": false },
+          { "text": "Fire-resistant plasterboard", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "What is the purpose of compartmentation in buildings?",
+        "answers": [
+          { "text": "To control fire spread between different areas", "correct": true },
+          { "text": "To improve acoustics", "correct": false },
+          { "text": "To enhance insulation", "correct": false },
+          { "text": "To control building temperature", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which type of fire-resistant lining is most suitable for escape routes?",
+        "answers": [
+          { "text": "Class 0", "correct": true },
+          { "text": "Class 1", "correct": false },
+          { "text": "Class 2", "correct": false },
+          { "text": "Class 3", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "How are internal linings classified in the UK for fire performance?",
+        "answers": [
+          { "text": "By their surface spread of flame", "correct": true },
+          { "text": "By their thermal insulation", "correct": false },
+          { "text": "By their thickness", "correct": false },
+          { "text": "By their structural integrity", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which of the following factors increases the risk of fire spread in internal linings?",
+        "answers": [
+          { "text": "High surface flame spread", "correct": true },
+          { "text": "Low moisture content", "correct": false },
+          { "text": "Smooth texture", "correct": false },
+          { "text": "Reflective properties", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which of the following internal wall finishes is considered non-combustible?",
+        "answers": [
+          { "text": "Brickwork", "correct": true },
+          { "text": "Wood cladding", "correct": false },
+          { "text": "Painted plaster", "correct": false },
+          { "text": "Plastic wall panels", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which class of lining should be used in a healthcare building's corridors to minimize fire spread?",
+        "answers": [
+          { "text": "Class 0", "correct": true },
+          { "text": "Class 1", "correct": false },
+          { "text": "Class 2", "correct": false },
+          { "text": "Class 3", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "What is the maximum allowable flame spread for wall linings in escape routes?",
+        "answers": [
+          { "text": "Class 0", "correct": true },
+          { "text": "Class 2", "correct": false },
+          { "text": "Class 3", "correct": false },
+          { "text": "Class 4", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "What type of lining should be used in areas with high fire risk?",
+        "answers": [
+          { "text": "Non-combustible", "correct": true },
+          { "text": "Class 3", "correct": false },
+          { "text": "Combustible but heat-resistant", "correct": false },
+          { "text": "Reflective materials", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which of the following materials is considered non-combustible in the context of fire safety?",
+        "answers": [
+          { "text": "Concrete", "correct": true },
+          { "text": "Wood", "correct": false },
+          { "text": "Plastic cladding", "correct": false },
+          { "text": "Upholstered panels", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which fire performance class is recommended for the linings in protected stairways?",
+        "answers": [
+          { "text": "Class 0", "correct": true },
+          { "text": "Class 1", "correct": false },
+          { "text": "Class 2", "correct": false },
+          { "text": "Class 3", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "What is a common fire hazard associated with thermoplastic materials used as internal linings?",
+        "answers": [
+          { "text": "Melting and dripping when exposed to heat", "correct": true },
+          { "text": "Reflecting flames and increasing fire spread", "correct": false },
+          { "text": "Increasing the speed of evacuation", "correct": false },
+          { "text": "Absorbing flames", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "What fire performance classification is appropriate for linings in escape routes in schools?",
+        "answers": [
+          { "text": "Class 0", "correct": true },
+          { "text": "Class 1", "correct": false },
+          { "text": "Class 2", "correct": false },
+          { "text": "Class 3", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which building component is critical in controlling fire spread through wall and ceiling linings?",
+        "answers": [
+          { "text": "Surface spread of flame", "correct": true },
+          { "text": "Thermal insulation", "correct": false },
+          { "text": "Moisture absorption", "correct": false },
+          { "text": "Color of the lining", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which of the following classifications is required for wall linings in high-risk areas?",
+        "answers": [
+          { "text": "Class 0", "correct": true },
+          { "text": "Class 1", "correct": false },
+          { "text": "Class 2", "correct": false },
+          { "text": "Class 3", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "What is the primary concern when using thermoplastic materials for ceiling linings?",
+        "answers": [
+          { "text": "Dripping and spreading fire", "correct": true },
+          { "text": "Decreasing thermal insulation", "correct": false },
+          { "text": "Reducing natural light", "correct": false },
+          { "text": "Corroding the ceiling structure", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which of the following is considered a key property of Class 0 fire performance materials?",
+        "answers": [
+          { "text": "Limited surface spread of flame", "correct": true },
+          { "text": "High smoke production", "correct": false },
+          { "text": "Reflective surface", "correct": false },
+          { "text": "Lightweight", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "What is the typical classification of lining materials used in escape routes?",
+        "answers": [
+          { "text": "Class 0", "correct": true },
+          { "text": "Class 1", "correct": false },
+          { "text": "Class 2", "correct": false },
+          { "text": "Class 3", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "What is the primary reason for using non-combustible materials in internal linings?",
+        "answers": [
+          { "text": "To prevent surface spread of flame", "correct": true },
+          { "text": "To reduce building costs", "correct": false },
+          { "text": "To improve soundproofing", "correct": false },
+          { "text": "To allow faster construction", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which lining material provides the highest level of fire resistance?",
+        "answers": [
+          { "text": "Gypsum board", "correct": false },
+          { "text": "Brickwork", "correct": true },
+          { "text": "Wood paneling", "correct": false },
+          { "text": "Plastic sheeting", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which is a key feature of a fire-rated wall lining material?",
+        "answers": [
+          { "text": "Non-combustibility", "correct": true },
+          { "text": "Low cost", "correct": false },
+          { "text": "Aesthetic appearance", "correct": false },
+          { "text": "Thermal insulation properties", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Why are cavity barriers installed in buildings?",
+        "answers": [
+          { "text": "To prevent hidden fire spread within cavities", "correct": true },
+          { "text": "To improve structural integrity", "correct": false },
+          { "text": "To prevent sound transmission", "correct": false },
+          { "text": "To regulate indoor temperature", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which material should be avoided in fire-resistant ceiling linings?",
+        "answers": [
+          { "text": "Thermoplastic panels", "correct": true },
+          { "text": "Gypsum board", "correct": false },
+          { "text": "Fire-resistant plasterboard", "correct": false },
+          { "text": "Concrete slabs", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which of the following materials is most likely to contribute to fire spread in a building?",
+        "answers": [
+          { "text": "Wood cladding", "correct": true },
+          { "text": "Metal sheets", "correct": false },
+          { "text": "Concrete walls", "correct": false },
+          { "text": "Glass panels", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "In which areas of a building should Class 0 materials be used to control fire spread?",
+        "answers": [
+          { "text": "Escape routes and stairways", "correct": true },
+          { "text": "External walls", "correct": false },
+          { "text": "Roof spaces", "correct": false },
+          { "text": "Basements", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "What is the primary risk associated with using combustible materials in internal linings?",
+        "answers": [
+          { "text": "Increased fire spread", "correct": true },
+          { "text": "Decreased thermal efficiency", "correct": false },
+          { "text": "Lower sound insulation", "correct": false },
+          { "text": "Reduced durability", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which classification should internal linings achieve in high-occupancy areas?",
+        "answers": [
+          { "text": "Class 0", "correct": true },
+          { "text": "Class 1", "correct": false },
+          { "text": "Class 2", "correct": false },
+          { "text": "Class 3", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which factor is most important when choosing materials for linings in escape routes?",
+        "answers": [
+          { "text": "Fire resistance", "correct": true },
+          { "text": "Color", "correct": false },
+          { "text": "Acoustic properties", "correct": false },
+          { "text": "Thickness", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which class of fire-resistant lining material is required for use in healthcare facilities?",
+        "answers": [
+          { "text": "Class 0", "correct": true },
+          { "text": "Class 1", "correct": false },
+          { "text": "Class 2", "correct": false },
+          { "text": "Class 3", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which type of wall or ceiling lining is considered non-combustible?",
+        "answers": [
+          { "text": "Concrete", "correct": true },
+          { "text": "Wood paneling", "correct": false },
+          { "text": "Vinyl wallpaper", "correct": false },
+          { "text": "Thermoplastic cladding", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which surface treatment on linings helps limit fire spread?",
+        "answers": [
+          { "text": "Intumescent paint", "correct": true },
+          { "text": "Regular wall paint", "correct": false },
+          { "text": "Polished varnish", "correct": false },
+          { "text": "Plastic film coating", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "What is the maximum flame spread classification for linings used in a protected stairway?",
+        "answers": [
+          { "text": "Class 0", "correct": true },
+          { "text": "Class 1", "correct": false },
+          { "text": "Class 2", "correct": false },
+          { "text": "Class 3", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which lining material should be used in high-risk areas where fire spread must be minimized?",
+        "answers": [
+          { "text": "Non-combustible", "correct": true },
+          { "text": "Combustible with fire-retardant coating", "correct": false },
+          { "text": "Wood paneling", "correct": false },
+          { "text": "Plastic cladding", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which regulation or guidance document governs the use of materials for internal linings in the UK?",
+        "answers": [
+          { "text": "Approved Document B", "correct": true },
+          { "text": "Approved Document F", "correct": false },
+          { "text": "Approved Document L", "correct": false },
+          { "text": "Approved Document M", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which factor contributes the most to a material's classification for surface spread of flame?",
+        "answers": [
+          { "text": "Surface coating", "correct": true },
+          { "text": "Thickness of material", "correct": false },
+          { "text": "Color of the material", "correct": false },
+          { "text": "Reflectivity", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "What is the purpose of surface spread of flame testing for internal linings?",
+        "answers": [
+          { "text": "To measure how quickly flames spread across the surface", "correct": true },
+          { "text": "To determine the material's soundproofing ability", "correct": false },
+          { "text": "To test the material's water resistance", "correct": false },
+          { "text": "To assess the material's color retention", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which of the following lining materials is most suitable for a protected stairwell?",
+        "answers": [
+          { "text": "Class 0 rated plasterboard", "correct": true },
+          { "text": "Class 1 rated wood paneling", "correct": false },
+          { "text": "Class 3 rated thermoplastic cladding", "correct": false },
+          { "text": "Unrated wallpaper", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "How often should fire-resistant linings in high-risk buildings be inspected for damage?",
+        "answers": [
+          { "text": "Annually", "correct": true },
+          { "text": "Every 5 years", "correct": false },
+          { "text": "Every 10 years", "correct": false },
+          { "text": "Only during renovations", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which class of internal lining material is required for use in schools to limit fire spread?",
+        "answers": [
+          { "text": "Class 0", "correct": true },
+          { "text": "Class 1", "correct": false },
+          { "text": "Class 2", "correct": false },
+          { "text": "Class 3", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "What should be done if fire-resistant linings in a building show signs of wear or damage?",
+        "answers": [
+          { "text": "They should be replaced immediately", "correct": true },
+          { "text": "They should be painted over", "correct": false },
+          { "text": "They should be reinforced with metal sheets", "correct": false },
+          { "text": "They should be left as is if minor", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "In large assembly buildings, what fire performance classification should internal wall linings achieve?",
+        "answers": [
+          { "text": "Class 0", "correct": true },
+          { "text": "Class 1", "correct": false },
+          { "text": "Class 2", "correct": false },
+          { "text": "Class 3", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which of the following is a common fire hazard associated with damaged internal linings?",
+        "answers": [
+          { "text": "Increased surface flame spread", "correct": true },
+          { "text": "Enhanced soundproofing", "correct": false },
+          { "text": "Reduced building height", "correct": false },
+          { "text": "Increased lighting reflection", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which of the following should be done to internal linings in high-risk areas to reduce fire spread?",
+        "answers": [
+          { "text": "Use non-combustible materials", "correct": true },
+          { "text": "Install additional lighting", "correct": false },
+          { "text": "Reduce the thickness of linings", "correct": false },
+          { "text": "Add reflective coatings", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "What is the effect of using thermoplastic materials in ceilings during a fire?",
+        "answers": [
+          { "text": "They can drip and contribute to fire spread", "correct": true },
+          { "text": "They prevent smoke accumulation", "correct": false },
+          { "text": "They act as a barrier to flames", "correct": false },
+          { "text": "They provide structural support", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "In a healthcare facility, which class of lining material is required in corridors to limit fire spread?",
+        "answers": [
+          { "text": "Class 0", "correct": true },
+          { "text": "Class 1", "correct": false },
+          { "text": "Class 2", "correct": false },
+          { "text": "Class 3", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "Which type of ceiling lining should be avoided in fire-resistant buildings?",
+        "answers": [
+          { "text": "Thermoplastic materials", "correct": true },
+          { "text": "Concrete panels", "correct": false },
+          { "text": "Fire-resistant plasterboard", "correct": false },
+          { "text": "Gypsum board", "correct": false }
+        ]
+      },
+      {
+        "topic": "B2: Internal Fire Spread (Linings)",
+        "question": "What is the recommended classification for linings in areas where fire spread needs to be minimized?",
+        "answers": [
+          { "text": "Class 0", "correct": true },
+          { "text": "Class 1", "correct": false },
+          { "text": "Class 2", "correct": false },
+          { "text": "Class 3", "correct": false }
+        ]
+      }
+    ],
+
+
+
+
+
+
+
+
+
+
+    "B3": [
+    {
+      "topic": "B3: Internal Fire Spread (Structure)",
+      "question": "Which test is used to determine the fire resistance of load-bearing elements?",
+      "answers": [
+        { "text": "Standard fire resistance test", "correct": true },
+        { "text": "Acoustic performance test", "correct": false },
+        { "text": "Vibration test", "correct": false },
+        { "text": "Thermal performance test", "correct": false }
+      ]
+    },
+    {
+      "topic": "B3: Internal Fire Spread (Structure)",
+      "question": "What is the purpose of fire-resisting floors?",
+      "answers": [
+        { "text": "To prevent the spread of fire between floors", "correct": true },
+        { "text": "To improve structural rigidity", "correct": false },
+        { "text": "To improve sound insulation", "correct": false },
+        { "text": "To increase thermal resistance", "correct": false }
+      ]
+    },
+    {
+      "topic": "B3: Internal Fire Spread (Structure)",
+      "question": "What is a common method of providing fire resistance to steel columns?",
+      "answers": [
+        { "text": "Applying fire-resistant coating", "correct": true },
+        { "text": "Adding concrete reinforcement", "correct": false },
+        { "text": "Using thicker steel", "correct": false },
+        { "text": "Polishing the surface", "correct": false }
+      ]
+    },
+    {
+      "topic": "B3: Internal Fire Spread (Structure)",
+      "question": "Which of the following is a key requirement for compartment walls?",
+      "answers": [
+        { "text": "They must have a specified fire resistance", "correct": true },
+        { "text": "They should be lightweight", "correct": false },
+        { "text": "They must have a decorative finish", "correct": false },
+        { "text": "They should contain windows", "correct": false }
+      ]
+    },
+    {
+      "topic": "B3: Internal Fire Spread (Structure)",
+      "question": "How long should structural elements be designed to resist fire in high-rise buildings?",
+      "answers": [
+        { "text": "90 minutes", "correct": true },
+        { "text": "60 minutes", "correct": false },
+        { "text": "30 minutes", "correct": false },
+        { "text": "45 minutes", "correct": false }
+      ]
+    },
+    {
+      "topic": "B3: Internal Fire Spread (Structure)",
+      "question": "What is the primary role of fire-resisting doors in compartment walls?",
+      "answers": [
+        { "text": "To prevent the spread of fire between compartments", "correct": true },
+        { "text": "To improve ventilation", "correct": false },
+        { "text": "To provide a decorative finish", "correct": false },
+        { "text": "To allow natural light", "correct": false }
+      ]
+    },
+    {
+      "topic": "B3: Internal Fire Spread (Structure)",
+      "question": "Which of the following materials is commonly used to provide fire resistance in floors?",
+      "answers": [
+        { "text": "Concrete", "correct": true },
+        { "text": "Wood", "correct": false },
+        { "text": "Glass", "correct": false },
+        { "text": "Aluminum", "correct": false }
+      ]
+    },
+    {
+      "topic": "B3: Internal Fire Spread (Structure)",
+      "question": "Which construction feature is important to ensure fire separation between floors?",
+      "answers": [
+        { "text": "Fire-resisting floors", "correct": true },
+        { "text": "Open-plan design", "correct": false },
+        { "text": "Timber beams", "correct": false },
+        { "text": "Glass panels", "correct": false }
+      ]
+    },
+    {
+      "topic": "B3: Internal Fire Spread (Structure)",
+      "question": "What is the function of fire-stopping materials in a building?",
+      "answers": [
+        { "text": "To seal gaps and prevent fire spread", "correct": true },
+        { "text": "To allow better air circulation", "correct": false },
+        { "text": "To provide aesthetic enhancements", "correct": false },
+        { "text": "To increase building flexibility", "correct": false }
+      ]
+    },
+    {
+      "topic": "B3: Internal Fire Spread (Structure)",
+      "question": "Which component is crucial for preventing fire spread through service openings between compartments?",
+      "answers": [
+        { "text": "Fire-rated ductwork", "correct": true },
+        { "text": "Decorative grills", "correct": false },
+        { "text": "Ventilation fans", "correct": false },
+        { "text": "Unsealed openings", "correct": false }
+      ]
+    },
+    {
+      "topic": "B3: Internal Fire Spread (Structure)",
+      "question": "What is the maximum permitted compartment size for an unsprinklered commercial building?",
+      "answers": [
+        { "text": "2000 square meters", "correct": true },
+        { "text": "5000 square meters", "correct": false },
+        { "text": "1000 square meters", "correct": false },
+        { "text": "4000 square meters", "correct": false }
+      ]
+    },
+    {
+      "topic": "B3: Internal Fire Spread (Structure)",
+      "question": "Which construction feature provides vertical fire separation in multi-story buildings?",
+      "answers": [
+        { "text": "Fire-resisting walls and floors", "correct": true },
+        { "text": "Glass partitions", "correct": false },
+        { "text": "Curtain walls", "correct": false },
+        { "text": "Non-load-bearing partitions", "correct": false }
+      ]
+    },
+    {
+      "topic": "B3: Internal Fire Spread (Structure)",
+      "question": "Which fire resistance period is typically required for compartment walls in industrial buildings?",
+      "answers": [
+        { "text": "120 minutes", "correct": true },
+        { "text": "60 minutes", "correct": false },
+        { "text": "30 minutes", "correct": false },
+        { "text": "90 minutes", "correct": false }
+      ]
+    },
+    {
+      "topic": "B3: Internal Fire Spread (Structure)",
+      "question": "Which structural feature is most vulnerable to fire and requires additional protection?",
+      "answers": [
+        { "text": "Steel columns", "correct": true },
+        { "text": "Concrete beams", "correct": false },
+        { "text": "Brick walls", "correct": false },
+        { "text": "Tiled floors", "correct": false }
+      ]
+    },
+    {
+      "topic": "B3: Internal Fire Spread (Structure)",
+      "question": "What is the primary role of intumescent materials used in fire protection?",
+      "answers": [
+        { "text": "To expand and seal gaps during a fire", "correct": true },
+        { "text": "To cool the structure", "correct": false },
+        { "text": "To absorb moisture", "correct": false },
+        { "text": "To improve insulation", "correct": false }
+      ]
+    },
+    {
+      "topic": "B3: Internal Fire Spread (Structure)",
+      "question": "Which test is commonly used to assess the fire resistance of structural elements?",
+      "answers": [
+        { "text": "Standard fire resistance test", "correct": true },
+        { "text": "Thermal conductivity test", "correct": false },
+        { "text": "Sound insulation test", "correct": false },
+        { "text": "Structural integrity test", "correct": false }
+      ]
+    },
+    {
+      "topic": "B3: Internal Fire Spread (Structure)",
+      "question": "Why is it important to protect steel beams and columns in a fire?",
+      "answers": [
+        { "text": "Steel loses strength at high temperatures", "correct": true },
+        { "text": "Steel can melt in low-temperature fires", "correct": false },
+        { "text": "Steel is more expensive to replace", "correct": false },
+        { "text": "Steel beams are often decorative", "correct": false }
+      ]
+    },
+    {
+      "topic": "B3: Internal Fire Spread (Structure)",
+      "question": "What is the purpose of compartmentation in multi-story buildings?",
+      "answers": [
+        { "text": "To limit the spread of fire and smoke", "correct": true },
+        { "text": "To improve energy efficiency", "correct": false },
+        { "text": "To support larger floor loads", "correct": false },
+        { "text": "To reduce noise transmission", "correct": false }
+      ]
+    },
+    {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which of the following is a key component of fire-resisting construction?",
+        "answers": [
+          { "text": "Fire-stopping materials", "correct": true },
+          { "text": "Open spaces", "correct": false },
+          { "text": "Curtain walls", "correct": false },
+          { "text": "Glass facades", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "What is the recommended fire resistance for external walls in high-rise residential buildings?",
+        "answers": [
+          { "text": "90 minutes", "correct": true },
+          { "text": "30 minutes", "correct": false },
+          { "text": "60 minutes", "correct": false },
+          { "text": "120 minutes", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which of the following is NOT a function of compartmentation in fire safety?",
+        "answers": [
+          { "text": "Providing escape routes", "correct": true },
+          { "text": "Containing fire spread", "correct": false },
+          { "text": "Preventing structural collapse", "correct": false },
+          { "text": "Allowing firefighting operations", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which fire safety measure is essential to prevent the spread of fire through service penetrations?",
+        "answers": [
+          { "text": "Fire-stopping materials", "correct": true },
+          { "text": "Ventilation grilles", "correct": false },
+          { "text": "Non-combustible cladding", "correct": false },
+          { "text": "Unsealed ducts", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which material is commonly used for fire-resisting partitions?",
+        "answers": [
+          { "text": "Gypsum board", "correct": true },
+          { "text": "Thermoplastic panels", "correct": false },
+          { "text": "Wooden planks", "correct": false },
+          { "text": "Glass blocks", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Why is it important to inspect fire-resistant linings regularly?",
+        "answers": [
+          { "text": "To ensure they remain effective in preventing fire spread", "correct": true },
+          { "text": "To enhance their decorative appearance", "correct": false },
+          { "text": "To replace them with combustible materials", "correct": false },
+          { "text": "To improve air quality", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "What is the role of fire-resisting ceilings in multi-story buildings?",
+        "answers": [
+          { "text": "To prevent fire spread into roof spaces", "correct": true },
+          { "text": "To support structural loads", "correct": false },
+          { "text": "To improve sound insulation", "correct": false },
+          { "text": "To enhance natural light", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which of the following increases a building’s resistance to structural collapse during a fire?",
+        "answers": [
+          { "text": "Using fire-protected steel columns", "correct": true },
+          { "text": "Installing glass partitions", "correct": false },
+          { "text": "Using combustible cladding", "correct": false },
+          { "text": "Reducing floor-to-ceiling heights", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which type of building structure requires the highest level of fire protection?",
+        "answers": [
+          { "text": "High-rise buildings", "correct": true },
+          { "text": "Single-story buildings", "correct": false },
+          { "text": "Detached houses", "correct": false },
+          { "text": "Small retail units", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "What is the purpose of cavity barriers in fire safety?",
+        "answers": [
+          { "text": "To prevent the spread of fire through concealed spaces", "correct": true },
+          { "text": "To improve air circulation", "correct": false },
+          { "text": "To enhance structural support", "correct": false },
+          { "text": "To reduce heat loss", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Why is steel often protected with fire-resistant coatings?",
+        "answers": [
+          { "text": "Because it loses strength at high temperatures", "correct": true },
+          { "text": "Because it conducts electricity", "correct": false },
+          { "text": "Because it absorbs moisture", "correct": false },
+          { "text": "Because it expands significantly when heated", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "How often should fire-resisting elements in buildings be inspected?",
+        "answers": [
+          { "text": "Annually", "correct": true },
+          { "text": "Every 5 years", "correct": false },
+          { "text": "Every 10 years", "correct": false },
+          { "text": "Only during renovations", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which of the following is considered a key element of structure for fire safety?",
+        "answers": [
+          { "text": "Load-bearing columns", "correct": true },
+          { "text": "Non-load-bearing partitions", "correct": false },
+          { "text": "Floor finishes", "correct": false },
+          { "text": "Curtain walls", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which feature is essential in compartment walls to maintain fire separation?",
+        "answers": [
+          { "text": "Fire-rated doors", "correct": true },
+          { "text": "Glass panels", "correct": false },
+          { "text": "Curtains", "correct": false },
+          { "text": "Wooden frames", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "What is the function of fire-resisting floors in multi-story buildings?",
+        "answers": [
+          { "text": "To prevent the vertical spread of fire", "correct": true },
+          { "text": "To improve structural stability", "correct": false },
+          { "text": "To enhance sound insulation", "correct": false },
+          { "text": "To increase thermal resistance", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which material is most commonly used for fire-resistant structural columns?",
+        "answers": [
+          { "text": "Steel with fire-resistant coating", "correct": true },
+          { "text": "Aluminum", "correct": false },
+          { "text": "Wood", "correct": false },
+          { "text": "Glass", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Why is it important to maintain compartmentation during renovations?",
+        "answers": [
+          { "text": "To ensure fire does not spread through breaches", "correct": true },
+          { "text": "To enhance natural light", "correct": false },
+          { "text": "To improve thermal efficiency", "correct": false },
+          { "text": "To reduce costs", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "What is the role of protected shafts in buildings?",
+        "answers": [
+          { "text": "To prevent fire spread through service openings", "correct": true },
+          { "text": "To allow faster airflow", "correct": false },
+          { "text": "To improve structural flexibility", "correct": false },
+          { "text": "To enhance aesthetic appeal", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "What is the fire resistance period required for compartment walls in commercial buildings over 18 meters tall?",
+        "answers": [
+          { "text": "120 minutes", "correct": true },
+          { "text": "30 minutes", "correct": false },
+          { "text": "60 minutes", "correct": false },
+          { "text": "90 minutes", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which of the following measures helps prevent the spread of fire between floors in multi-story buildings?",
+        "answers": [
+          { "text": "Fire-resisting floors and ceilings", "correct": true },
+          { "text": "Open stairwells", "correct": false },
+          { "text": "Glass partitions", "correct": false },
+          { "text": "Ventilation ducts", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "What is the purpose of applying fire protection to steel structural elements?",
+        "answers": [
+          { "text": "To prevent premature structural collapse", "correct": true },
+          { "text": "To improve aesthetic appearance", "correct": false },
+          { "text": "To reduce thermal conductivity", "correct": false },
+          { "text": "To enhance sound insulation", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which type of material is most effective in providing fire protection for load-bearing structures?",
+        "answers": [
+          { "text": "Intumescent coatings", "correct": true },
+          { "text": "Thermoplastic panels", "correct": false },
+          { "text": "Reflective surfaces", "correct": false },
+          { "text": "Glass blocks", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which of the following is a fire-resistant material used in compartment walls?",
+        "answers": [
+          { "text": "Concrete", "correct": true },
+          { "text": "Wood paneling", "correct": false },
+          { "text": "Plastic cladding", "correct": false },
+          { "text": "Upholstered partitions", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "What is the recommended fire resistance for compartment floors in residential buildings?",
+        "answers": [
+          { "text": "60 minutes", "correct": true },
+          { "text": "30 minutes", "correct": false },
+          { "text": "45 minutes", "correct": false },
+          { "text": "90 minutes", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which construction feature helps limit the spread of fire through concealed spaces?",
+        "answers": [
+          { "text": "Cavity barriers", "correct": true },
+          { "text": "Glass partitions", "correct": false },
+          { "text": "Ventilation ducts", "correct": false },
+          { "text": "Curtain walls", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which type of material is often used to fireproof steel columns and beams?",
+        "answers": [
+          { "text": "Intumescent paint", "correct": true },
+          { "text": "Varnish", "correct": false },
+          { "text": "Thermal blankets", "correct": false },
+          { "text": "Reflective coatings", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "What is the primary concern when using combustible materials in structural elements?",
+        "answers": [
+          { "text": "Increased fire spread and reduced structural integrity", "correct": true },
+          { "text": "Improved insulation properties", "correct": false },
+          { "text": "Enhanced structural flexibility", "correct": false },
+          { "text": "Improved ventilation", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Why are compartment floors and walls critical in fire safety design?",
+        "answers": [
+          { "text": "They limit the spread of fire and smoke", "correct": true },
+          { "text": "They increase thermal efficiency", "correct": false },
+          { "text": "They enhance soundproofing", "correct": false },
+          { "text": "They improve aesthetic appeal", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "What is the function of fire-rated doors in compartment walls?",
+        "answers": [
+          { "text": "To maintain compartmentalization and prevent fire spread", "correct": true },
+          { "text": "To allow ventilation during a fire", "correct": false },
+          { "text": "To enhance thermal insulation", "correct": false },
+          { "text": "To provide escape routes for firefighters", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which feature of fire protection allows building services to pass through compartments safely?",
+        "answers": [
+          { "text": "Protected shafts", "correct": true },
+          { "text": "Open ducts", "correct": false },
+          { "text": "Combustible conduits", "correct": false },
+          { "text": "Glass partitions", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which material is commonly used to create fire-resistant floors in commercial buildings?",
+        "answers": [
+          { "text": "Concrete", "correct": true },
+          { "text": "Timber", "correct": false },
+          { "text": "Plastic", "correct": false },
+          { "text": "Glass", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which of the following is most likely to compromise the fire resistance of a compartment?",
+        "answers": [
+          { "text": "Unsealed service penetrations", "correct": true },
+          { "text": "Using non-combustible materials", "correct": false },
+          { "text": "Installing cavity barriers", "correct": false },
+          { "text": "Installing fire-rated doors", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which fire safety feature is critical in protecting service penetrations through fire-rated walls?",
+        "answers": [
+          { "text": "Fire-stopping materials", "correct": true },
+          { "text": "Vents", "correct": false },
+          { "text": "Timber framing", "correct": false },
+          { "text": "Curtains", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "What is the purpose of a fire curtain?",
+        "answers": [
+          { "text": "To compartmentalize large open spaces during a fire", "correct": true },
+          { "text": "To improve thermal insulation", "correct": false },
+          { "text": "To reduce noise levels", "correct": false },
+          { "text": "To provide additional lighting", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which element of a building’s structure requires the most additional fire protection?",
+        "answers": [
+          { "text": "Steel columns and beams", "correct": true },
+          { "text": "Concrete walls", "correct": false },
+          { "text": "Timber partitions", "correct": false },
+          { "text": "Glass windows", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Why is it essential to maintain the integrity of compartmentation during building renovations?",
+        "answers": [
+          { "text": "To prevent fire spread through newly created gaps", "correct": true },
+          { "text": "To increase natural lighting", "correct": false },
+          { "text": "To improve energy efficiency", "correct": false },
+          { "text": "To enhance soundproofing", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which type of material expands when exposed to heat and seals gaps during a fire?",
+        "answers": [
+          { "text": "Intumescent materials", "correct": true },
+          { "text": "Plastic sheeting", "correct": false },
+          { "text": "Wooden panels", "correct": false },
+          { "text": "Metal sheets", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which fire-resistant material is typically used in load-bearing walls?",
+        "answers": [
+          { "text": "Concrete", "correct": true },
+          { "text": "Thermoplastic panels", "correct": false },
+          { "text": "Timber", "correct": false },
+          { "text": "Glass partitions", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "What is the role of fire-resistant partitions in a multi-story building?",
+        "answers": [
+          { "text": "To prevent horizontal fire spread", "correct": true },
+          { "text": "To increase room size", "correct": false },
+          { "text": "To provide insulation", "correct": false },
+          { "text": "To improve aesthetics", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Why is compartmentation critical for buildings with complex layouts?",
+        "answers": [
+          { "text": "To limit the spread of fire and protect escape routes", "correct": true },
+          { "text": "To increase heating efficiency", "correct": false },
+          { "text": "To improve access for firefighters", "correct": false },
+          { "text": "To reduce building costs", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "What is the minimum fire resistance period for compartment walls in buildings under 10 meters?",
+        "answers": [
+          { "text": "30 minutes", "correct": true },
+          { "text": "60 minutes", "correct": false },
+          { "text": "90 minutes", "correct": false },
+          { "text": "120 minutes", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which structural material typically needs fire protection in high-rise buildings?",
+        "answers": [
+          { "text": "Steel", "correct": true },
+          { "text": "Wood", "correct": false },
+          { "text": "Concrete", "correct": false },
+          { "text": "Glass", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which building feature helps prevent fire spread between floors in multi-story structures?",
+        "answers": [
+          { "text": "Fire-resisting floors", "correct": true },
+          { "text": "Open stairwells", "correct": false },
+          { "text": "Large windows", "correct": false },
+          { "text": "Curtain walls", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "What is a key requirement for structural elements in buildings over 18 meters in height?",
+        "answers": [
+          { "text": "They must have 120 minutes of fire resistance", "correct": true },
+          { "text": "They must be lightweight", "correct": false },
+          { "text": "They must be made of steel", "correct": false },
+          { "text": "They must have decorative finishes", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "What is the primary function of a fire damper in HVAC systems?",
+        "answers": [
+          { "text": "To prevent fire from spreading through ductwork", "correct": true },
+          { "text": "To control air temperature", "correct": false },
+          { "text": "To improve ventilation", "correct": false },
+          { "text": "To reduce noise levels", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which type of fire protection is often applied to steel beams to prevent weakening during a fire?",
+        "answers": [
+          { "text": "Intumescent coatings", "correct": true },
+          { "text": "Thermoplastic sheeting", "correct": false },
+          { "text": "Glass cladding", "correct": false },
+          { "text": "Wooden coverings", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "What is the main purpose of installing fire-stopping materials around service penetrations?",
+        "answers": [
+          { "text": "To maintain the fire resistance of compartments", "correct": true },
+          { "text": "To improve sound insulation", "correct": false },
+          { "text": "To enhance ventilation", "correct": false },
+          { "text": "To reduce heat transfer", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which of the following is a fire-resistant material commonly used for compartment floors?",
+        "answers": [
+          { "text": "Concrete", "correct": true },
+          { "text": "Wood", "correct": false },
+          { "text": "Aluminum", "correct": false },
+          { "text": "Glass", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which factor is most important in determining the fire resistance of structural components?",
+        "answers": [
+          { "text": "Material thickness and composition", "correct": true },
+          { "text": "The height of the building", "correct": false },
+          { "text": "The color of the material", "correct": false },
+          { "text": "The aesthetic appeal", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "What is the function of fire-stopping materials installed in walls and floors?",
+        "answers": [
+          { "text": "To prevent the passage of fire and smoke through gaps", "correct": true },
+          { "text": "To reduce noise levels", "correct": false },
+          { "text": "To improve thermal insulation", "correct": false },
+          { "text": "To increase airflow", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which of the following structural materials requires additional fireproofing to meet safety standards?",
+        "answers": [
+          { "text": "Steel", "correct": true },
+          { "text": "Concrete", "correct": false },
+          { "text": "Brick", "correct": false },
+          { "text": "Gypsum board", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "What is the primary concern when using steel as a load-bearing structure in a fire?",
+        "answers": [
+          { "text": "Steel loses strength rapidly at high temperatures", "correct": true },
+          { "text": "Steel absorbs moisture", "correct": false },
+          { "text": "Steel expands too quickly", "correct": false },
+          { "text": "Steel ignites easily", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Why are protected shafts used in multi-story buildings?",
+        "answers": [
+          { "text": "To prevent fire and smoke from spreading through service ducts", "correct": true },
+          { "text": "To improve air circulation", "correct": false },
+          { "text": "To allow natural light", "correct": false },
+          { "text": "To support heavier loads", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Which type of fire-resisting construction is used to prevent the spread of fire between floors?",
+        "answers": [
+          { "text": "Compartment floors", "correct": true },
+          { "text": "Suspended ceilings", "correct": false },
+          { "text": "Glass partitions", "correct": false },
+          { "text": "Curtain walls", "correct": false }
+        ]
+      },
+      {
+        "topic": "B3: Internal Fire Spread (Structure)",
+        "question": "Why is it important to protect service penetrations in fire-resistant walls?",
+        "answers": [
+          { "text": "To prevent fire and smoke from spreading through the gaps", "correct": true },
+          { "text": "To improve ventilation", "correct": false },
+          { "text": "To reduce heat transfer", "correct": false },
+          { "text": "To enhance sound insulation", "correct": false }
+        ]
+      }
+    ],
+
+
+
+
+
+
+
+
+
+    "B4": [
+    {
+      "topic": "B4: External Fire Spread",
+      "question": "What is the primary concern regarding fire spread between buildings?",
+      "answers": [
+        { "text": "Radiation of heat from one building to another", "correct": true },
+        { "text": "Convection of air currents", "correct": false },
+        { "text": "Smoke ventilation", "correct": false },
+        { "text": "Thermal insulation", "correct": false }
+      ]
+    },
+    {
+      "topic": "B4: External Fire Spread",
+      "question": "Which material is considered most effective in limiting external fire spread?",
+      "answers": [
+        { "text": "Non-combustible cladding", "correct": true },
+        { "text": "Wooden shingles", "correct": false },
+        { "text": "Plastic panels", "correct": false },
+        { "text": "Thermoplastic sheeting", "correct": false }
+      ]
+    },
+    {
+      "topic": "B4: External Fire Spread",
+      "question": "What is the recommended distance between buildings to reduce the risk of fire spread?",
+      "answers": [
+        { "text": "6 meters", "correct": true },
+        { "text": "3 meters", "correct": false },
+        { "text": "9 meters", "correct": false },
+        { "text": "12 meters", "correct": false }
+      ]
+    },
+    {
+      "topic": "B4: External Fire Spread",
+      "question": "Which factor increases the likelihood of external fire spread between buildings?",
+      "answers": [
+        { "text": "Combustible external wall materials", "correct": true },
+        { "text": "Reflective glazing", "correct": false },
+        { "text": "Fire-resistant doors", "correct": false },
+        { "text": "Non-load-bearing walls", "correct": false }
+      ]
+    },
+    {
+      "topic": "B4: External Fire Spread",
+      "question": "Which regulation focuses on the control of external fire spread in the UK?",
+      "answers": [
+        { "text": "Approved Document B", "correct": true },
+        { "text": "Approved Document L", "correct": false },
+        { "text": "Approved Document F", "correct": false },
+        { "text": "Approved Document P", "correct": false }
+      ]
+    },
+    {
+      "topic": "B4: External Fire Spread",
+      "question": "What is the purpose of cavity barriers in external walls?",
+      "answers": [
+        { "text": "To prevent fire from spreading through concealed spaces", "correct": true },
+        { "text": "To enhance thermal insulation", "correct": false },
+        { "text": "To improve soundproofing", "correct": false },
+        { "text": "To reduce ventilation losses", "correct": false }
+      ]
+    },
+    {
+      "topic": "B4: External Fire Spread",
+      "question": "What is the maximum height for a building using combustible cladding materials in the UK?",
+      "answers": [
+        { "text": "18 meters", "correct": true },
+        { "text": "10 meters", "correct": false },
+        { "text": "25 meters", "correct": false },
+        { "text": "30 meters", "correct": false }
+      ]
+    },
+    {
+      "topic": "B4: External Fire Spread",
+      "question": "What is the primary method of fire spread through external walls?",
+      "answers": [
+        { "text": "Flame propagation over the surface of the cladding", "correct": true },
+        { "text": "Heat radiation through windows", "correct": false },
+        { "text": "Fire-stopping failures", "correct": false },
+        { "text": "Air movement in the cavity", "correct": false }
+      ]
+    },
+    {
+      "topic": "B4: External Fire Spread",
+      "question": "Which external wall system is most vulnerable to fire spread?",
+      "answers": [
+        { "text": "Timber frame with combustible cladding", "correct": true },
+        { "text": "Brick and block construction", "correct": false },
+        { "text": "Concrete panels", "correct": false },
+        { "text": "Steel-framed walls with non-combustible cladding", "correct": false }
+      ]
+    },
+    {
+      "topic": "B4: External Fire Spread",
+      "question": "Why is non-combustible cladding recommended for high-rise buildings?",
+      "answers": [
+        { "text": "It prevents rapid flame spread on the building’s exterior", "correct": true },
+        { "text": "It reduces the building's weight", "correct": false },
+        { "text": "It improves thermal efficiency", "correct": false },
+        { "text": "It increases aesthetic appeal", "correct": false }
+      ]
+    },
+    {
+      "topic": "B4: External Fire Spread",
+      "question": "What is the function of external fire-resisting walls?",
+      "answers": [
+        { "text": "To limit fire spread to adjacent buildings", "correct": true },
+        { "text": "To provide better insulation", "correct": false },
+        { "text": "To reduce noise pollution", "correct": false },
+        { "text": "To improve ventilation", "correct": false }
+      ]
+    },
+    {
+      "topic": "B4: External Fire Spread",
+      "question": "Which of the following materials is NOT suitable for use in high-rise cladding systems?",
+      "answers": [
+        { "text": "Polyethylene-core aluminum composite panels", "correct": true },
+        { "text": "Brick-faced cladding", "correct": false },
+        { "text": "Glass-reinforced concrete panels", "correct": false },
+        { "text": "Metal rainscreen cladding", "correct": false }
+      ]
+    },
+    {
+      "topic": "B4: External Fire Spread",
+      "question": "Which type of construction feature is used to prevent vertical fire spread in external walls?",
+      "answers": [
+        { "text": "Horizontal fire breaks", "correct": true },
+        { "text": "Curtain walls", "correct": false },
+        { "text": "Reflective glazing", "correct": false },
+        { "text": "Balconies", "correct": false }
+      ]
+    },
+    {
+      "topic": "B4: External Fire Spread",
+      "question": "Which building element is most vulnerable to fire spread from adjacent buildings?",
+      "answers": [
+        { "text": "Windows and glazing", "correct": true },
+        { "text": "Steel beams", "correct": false },
+        { "text": "Concrete columns", "correct": false },
+        { "text": "Timber flooring", "correct": false }
+      ]
+    },
+    {
+      "topic": "B4: External Fire Spread",
+      "question": "Which factor is most critical in reducing the risk of fire spread via external walls?",
+      "answers": [
+        { "text": "Non-combustibility of external materials", "correct": true },
+        { "text": "The color of the building", "correct": false },
+        { "text": "Window size", "correct": false },
+        { "text": "Use of insulation materials", "correct": false }
+      ]
+    },
+    {
+        "topic": "B4: External Fire Spread",
+        "question": "Which type of cladding system contributed to the spread of fire in several high-profile building fires?",
+        "answers": [
+          { "text": "Aluminum composite material (ACM) with polyethylene core", "correct": true },
+          { "text": "Brick-faced cladding", "correct": false },
+          { "text": "Glass-reinforced concrete panels", "correct": false },
+          { "text": "Steel rainscreen cladding", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which of the following is a fire safety risk associated with combustible external insulation?",
+        "answers": [
+          { "text": "Increased risk of rapid fire spread over the building's surface", "correct": true },
+          { "text": "Improved thermal performance", "correct": false },
+          { "text": "Reduced energy consumption", "correct": false },
+          { "text": "Decreased structural load", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "What is the main fire risk of using timber cladding in external walls?",
+        "answers": [
+          { "text": "High combustibility", "correct": true },
+          { "text": "Limited weather resistance", "correct": false },
+          { "text": "Increased structural load", "correct": false },
+          { "text": "Increased soundproofing", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "What is the purpose of fire-rated external walls?",
+        "answers": [
+          { "text": "To prevent fire spread to adjacent buildings", "correct": true },
+          { "text": "To enhance aesthetic appeal", "correct": false },
+          { "text": "To improve building acoustics", "correct": false },
+          { "text": "To reduce heating costs", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which regulation restricts the use of combustible cladding materials on high-rise residential buildings?",
+        "answers": [
+          { "text": "Building Regulations 2018 (Regulation 7)", "correct": true },
+          { "text": "Approved Document L", "correct": false },
+          { "text": "Approved Document M", "correct": false },
+          { "text": "Building Act 2004", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "How do cavity barriers in external wall systems help prevent fire spread?",
+        "answers": [
+          { "text": "By compartmentalizing spaces and stopping fire spread through cavities", "correct": true },
+          { "text": "By improving ventilation", "correct": false },
+          { "text": "By increasing insulation performance", "correct": false },
+          { "text": "By reflecting heat away from the building", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which external building component is most vulnerable to heat radiation from a nearby fire?",
+        "answers": [
+          { "text": "Windows", "correct": true },
+          { "text": "Steel beams", "correct": false },
+          { "text": "Concrete slabs", "correct": false },
+          { "text": "Non-combustible cladding", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "What is the maximum allowable height for a building with combustible insulation materials in the UK?",
+        "answers": [
+          { "text": "18 meters", "correct": true },
+          { "text": "10 meters", "correct": false },
+          { "text": "25 meters", "correct": false },
+          { "text": "30 meters", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which factor plays the most significant role in preventing fire spread via external walls?",
+        "answers": [
+          { "text": "The non-combustibility of the wall materials", "correct": true },
+          { "text": "The thickness of insulation", "correct": false },
+          { "text": "The building's height", "correct": false },
+          { "text": "The number of windows", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which external building feature is designed to prevent vertical fire spread?",
+        "answers": [
+          { "text": "Fire-resisting spandrels or barriers", "correct": true },
+          { "text": "Open balconies", "correct": false },
+          { "text": "Reflective glazing", "correct": false },
+          { "text": "External insulation", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which building element is most likely to ignite from exposure to flames from a nearby structure?",
+        "answers": [
+          { "text": "Timber cladding", "correct": true },
+          { "text": "Concrete walls", "correct": false },
+          { "text": "Steel beams", "correct": false },
+          { "text": "Non-combustible cladding", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which of the following strategies helps reduce fire spread between adjacent buildings?",
+        "answers": [
+          { "text": "Increasing the distance between buildings", "correct": true },
+          { "text": "Using larger windows", "correct": false },
+          { "text": "Increasing the floor-to-ceiling height", "correct": false },
+          { "text": "Adding decorative elements", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which external wall material is least likely to contribute to the spread of fire?",
+        "answers": [
+          { "text": "Brick", "correct": true },
+          { "text": "Timber cladding", "correct": false },
+          { "text": "Polyethylene panels", "correct": false },
+          { "text": "Plastic insulation", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "What is the primary purpose of spandrel panels in fire safety?",
+        "answers": [
+          { "text": "To prevent vertical fire spread between floors", "correct": true },
+          { "text": "To improve the building's energy efficiency", "correct": false },
+          { "text": "To allow more natural light into rooms", "correct": false },
+          { "text": "To reduce noise transmission", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which type of external cladding material poses the highest fire risk in high-rise buildings?",
+        "answers": [
+          { "text": "Aluminum composite panels (ACPs) with polyethylene core", "correct": true },
+          { "text": "Concrete panels", "correct": false },
+          { "text": "Metal cladding", "correct": false },
+          { "text": "Glass-reinforced plastic", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which material is considered non-combustible and often used for fire-resistant cladding systems?",
+        "answers": [
+          { "text": "Glass-reinforced concrete", "correct": true },
+          { "text": "Polyethylene", "correct": false },
+          { "text": "Thermoplastic panels", "correct": false },
+          { "text": "Wooden boards", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which of the following is a critical measure to reduce external fire spread in urban areas?",
+        "answers": [
+          { "text": "Providing adequate separation distances between buildings", "correct": true },
+          { "text": "Increasing the number of windows", "correct": false },
+          { "text": "Using timber cladding", "correct": false },
+          { "text": "Building with combustible materials", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which type of window glazing is recommended to reduce the risk of fire spread between buildings?",
+        "answers": [
+          { "text": "Fire-resistant glazing", "correct": true },
+          { "text": "Single-pane glass", "correct": false },
+          { "text": "Decorative glass", "correct": false },
+          { "text": "Tinted glass", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which external building component is most at risk of fire spread due to heat radiation from nearby structures?",
+        "answers": [
+          { "text": "Windows", "correct": true },
+          { "text": "Steel beams", "correct": false },
+          { "text": "Concrete foundations", "correct": false },
+          { "text": "Non-combustible cladding", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which fire protection feature helps prevent the spread of flames between adjacent floors in high-rise buildings?",
+        "answers": [
+          { "text": "Spandrel panels", "correct": true },
+          { "text": "Decorative cornices", "correct": false },
+          { "text": "Open balconies", "correct": false },
+          { "text": "Curtain walls", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which factor is most likely to contribute to the external spread of fire in multi-story buildings?",
+        "answers": [
+          { "text": "The presence of combustible external cladding", "correct": true },
+          { "text": "Non-combustible steel framework", "correct": false },
+          { "text": "Increased building height", "correct": false },
+          { "text": "The presence of large windows", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which method is used to prevent fire spread through cavities in external wall systems?",
+        "answers": [
+          { "text": "Installing cavity barriers", "correct": true },
+          { "text": "Using thicker insulation", "correct": false },
+          { "text": "Increasing the size of the cavity", "correct": false },
+          { "text": "Reducing the number of windows", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which building material is commonly used for fire-rated external wall systems in commercial buildings?",
+        "answers": [
+          { "text": "Concrete", "correct": true },
+          { "text": "Polyethylene", "correct": false },
+          { "text": "Wood paneling", "correct": false },
+          { "text": "Plastics", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which external cladding system poses the greatest risk for rapid flame spread?",
+        "answers": [
+          { "text": "Aluminum composite panels (ACPs) with polyethylene core", "correct": true },
+          { "text": "Brick masonry cladding", "correct": false },
+          { "text": "Glass-reinforced concrete panels", "correct": false },
+          { "text": "Stone cladding", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which of the following is NOT a factor that reduces the risk of external fire spread?",
+        "answers": [
+          { "text": "Using highly combustible insulation materials", "correct": true },
+          { "text": "Installing cavity barriers", "correct": false },
+          { "text": "Using non-combustible cladding", "correct": false },
+          { "text": "Providing sufficient separation distances between buildings", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which regulation governs the use of non-combustible materials in the external walls of high-rise buildings?",
+        "answers": [
+          { "text": "Building Regulations 2018 (Regulation 7)", "correct": true },
+          { "text": "Approved Document F", "correct": false },
+          { "text": "Approved Document K", "correct": false },
+          { "text": "Fire Safety Act 2021", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "What is the purpose of horizontal fire breaks in external wall systems?",
+        "answers": [
+          { "text": "To prevent vertical fire spread between floors", "correct": true },
+          { "text": "To allow better airflow", "correct": false },
+          { "text": "To improve insulation", "correct": false },
+          { "text": "To support structural loads", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which external wall material is least likely to contribute to fire spread in high-rise buildings?",
+        "answers": [
+          { "text": "Concrete", "correct": true },
+          { "text": "Timber", "correct": false },
+          { "text": "Plastic sheeting", "correct": false },
+          { "text": "Polyurethane foam", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which type of construction feature is installed in external walls to prevent the spread of fire between floors?",
+        "answers": [
+          { "text": "Spandrel panels", "correct": true },
+          { "text": "Curtain walls", "correct": false },
+          { "text": "Open balconies", "correct": false },
+          { "text": "Glass partitions", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which factor most significantly reduces the risk of fire spread via external walls in urban environments?",
+        "answers": [
+          { "text": "Non-combustibility of the wall materials", "correct": true },
+          { "text": "The use of large glass panels", "correct": false },
+          { "text": "The installation of decorative facades", "correct": false },
+          { "text": "Increased window sizes", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which type of external cladding is considered the safest for use on high-rise buildings?",
+        "answers": [
+          { "text": "Non-combustible materials like glass-reinforced concrete", "correct": true },
+          { "text": "Combustible materials like wood paneling", "correct": false },
+          { "text": "Aluminum composite panels with polyethylene core", "correct": false },
+          { "text": "Plastic insulation", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which external building feature is critical for limiting vertical fire spread in multi-story buildings?",
+        "answers": [
+          { "text": "Spandrel panels and cavity barriers", "correct": true },
+          { "text": "Open balconies", "correct": false },
+          { "text": "Ventilation ducts", "correct": false },
+          { "text": "Glass partitions", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Why is it important to prevent external fire spread between adjacent buildings?",
+        "answers": [
+          { "text": "To reduce the risk of fire spreading from one building to another and protect life safety", "correct": true },
+          { "text": "To improve energy efficiency", "correct": false },
+          { "text": "To reduce noise pollution", "correct": false },
+          { "text": "To increase ventilation", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which type of insulation material is most suitable for fire safety in high-rise buildings?",
+        "answers": [
+          { "text": "Mineral wool", "correct": true },
+          { "text": "Polyurethane foam", "correct": false },
+          { "text": "Polystyrene", "correct": false },
+          { "text": "Plastic sheeting", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which regulation was introduced to limit the use of combustible materials in the external walls of tall buildings?",
+        "answers": [
+          { "text": "Building Regulations 2018 (Regulation 7)", "correct": true },
+          { "text": "Approved Document B (2010)", "correct": false },
+          { "text": "Fire Safety Act 2021", "correct": false },
+          { "text": "Building Act 1984", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which component helps to prevent fire spread through the external wall cavities in high-rise buildings?",
+        "answers": [
+          { "text": "Cavity barriers", "correct": true },
+          { "text": "Curtain walls", "correct": false },
+          { "text": "Ventilation ducts", "correct": false },
+          { "text": "Open balconies", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "What is the minimum required fire resistance of spandrel panels in multi-story buildings?",
+        "answers": [
+          { "text": "60 minutes", "correct": true },
+          { "text": "30 minutes", "correct": false },
+          { "text": "45 minutes", "correct": false },
+          { "text": "90 minutes", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which feature of external walls is designed specifically to limit vertical fire spread?",
+        "answers": [
+          { "text": "Fire-resisting spandrel panels", "correct": true },
+          { "text": "Open ventilation grilles", "correct": false },
+          { "text": "Large windows", "correct": false },
+          { "text": "Decorative facades", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Why is it important to inspect the condition of external wall cladding in high-rise buildings?",
+        "answers": [
+          { "text": "To ensure that the cladding remains fire-resistant and structurally sound", "correct": true },
+          { "text": "To improve the building's energy efficiency", "correct": false },
+          { "text": "To enhance the building’s aesthetic appeal", "correct": false },
+          { "text": "To increase ventilation", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which of the following materials is considered the safest option for external cladding in tall buildings?",
+        "answers": [
+          { "text": "Non-combustible materials like glass-reinforced concrete", "correct": true },
+          { "text": "Combustible materials like timber panels", "correct": false },
+          { "text": "Aluminum composite panels (ACPs) with polyethylene core", "correct": false },
+          { "text": "Plastic cladding", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which factor is most critical in preventing fire spread through external wall systems in high-rise buildings?",
+        "answers": [
+          { "text": "The installation of non-combustible external materials", "correct": true },
+          { "text": "The size of the windows", "correct": false },
+          { "text": "The use of decorative panels", "correct": false },
+          { "text": "The color of the cladding", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which regulation introduced new standards for the use of external wall materials after the Grenfell Tower fire?",
+        "answers": [
+          { "text": "Building Regulations 2018 (Regulation 7)", "correct": true },
+          { "text": "Fire Safety Act 2021", "correct": false },
+          { "text": "Building Act 1984", "correct": false },
+          { "text": "Approved Document B (2010)", "correct": false }
+        ]
+      },
+      {
+        "topic": "B4: External Fire Spread",
+        "question": "Which of the following is a recommended fire-resistant material for use in external walls of high-rise buildings?",
+        "answers": [
+          { "text": "Concrete", "correct": true },
+          { "text": "Wood", "correct": false },
+          { "text": "Plastic sheeting", "correct": false },
+          { "text": "Polystyrene", "correct": false }
+        ]
+      }
+    ],
+
+
+
+
+
+
+
+
+
+    "B5": [
+    {
+      "topic": "B5: Access and Facilities for the Fire Service",
+      "question": "What is the minimum width of a fire access road to allow fire service vehicles to approach a building?",
+      "answers": [
+        { "text": "3.7 meters", "correct": true },
+        { "text": "2.5 meters", "correct": false },
+        { "text": "4.0 meters", "correct": false },
+        { "text": "3.0 meters", "correct": false }
+      ]
+    },
+    {
+      "topic": "B5: Access and Facilities for the Fire Service",
+      "question": "What is the maximum distance a fire appliance should be from the entrance to a building?",
+      "answers": [
+        { "text": "45 meters", "correct": true },
+        { "text": "30 meters", "correct": false },
+        { "text": "60 meters", "correct": false },
+        { "text": "25 meters", "correct": false }
+      ]
+    },
+    {
+      "topic": "B5: Access and Facilities for the Fire Service",
+      "question": "Which of the following is a key requirement for high-rise buildings in terms of fire service access?",
+      "answers": [
+        { "text": "Provision of firefighting shafts", "correct": true },
+        { "text": "Provision of external balconies", "correct": false },
+        { "text": "Fire exits on every floor", "correct": false },
+        { "text": "Increased insulation for exterior walls", "correct": false }
+      ]
+    },
+    {
+      "topic": "B5: Access and Facilities for the Fire Service",
+      "question": "What is the maximum travel distance for firefighters inside a building to reach a firefighting stair?",
+      "answers": [
+        { "text": "18 meters", "correct": true },
+        { "text": "25 meters", "correct": false },
+        { "text": "30 meters", "correct": false },
+        { "text": "15 meters", "correct": false }
+      ]
+    },
+    {
+      "topic": "B5: Access and Facilities for the Fire Service",
+      "question": "Which type of facility should be provided in buildings over 18 meters tall to assist the fire service?",
+      "answers": [
+        { "text": "Firefighting lifts", "correct": true },
+        { "text": "Dedicated fire exits", "correct": false },
+        { "text": "Increased ventilation", "correct": false },
+        { "text": "Automatic closing doors", "correct": false }
+      ]
+    },
+    {
+      "topic": "B5: Access and Facilities for the Fire Service",
+      "question": "What is the function of a dry rising main in firefighting operations?",
+      "answers": [
+        { "text": "To provide a readily accessible water supply for the fire service", "correct": true },
+        { "text": "To improve building insulation", "correct": false },
+        { "text": "To support structural loads during a fire", "correct": false },
+        { "text": "To prevent smoke from spreading", "correct": false }
+      ]
+    },
+    {
+      "topic": "B5: Access and Facilities for the Fire Service",
+      "question": "What is the recommended minimum clearance height for fire service vehicles on access roads?",
+      "answers": [
+        { "text": "4.1 meters", "correct": true },
+        { "text": "3.5 meters", "correct": false },
+        { "text": "5.0 meters", "correct": false },
+        { "text": "3.0 meters", "correct": false }
+      ]
+    },
+    {
+      "topic": "B5: Access and Facilities for the Fire Service",
+      "question": "In a building over 30 meters tall, what is required to ensure firefighter access to every floor?",
+      "answers": [
+        { "text": "Firefighting shafts", "correct": true },
+        { "text": "Automatic fire doors", "correct": false },
+        { "text": "Sprinkler systems", "correct": false },
+        { "text": "Ventilated corridors", "correct": false }
+      ]
+    },
+    {
+      "topic": "B5: Access and Facilities for the Fire Service",
+      "question": "Which regulation governs the design and access requirements for fire service vehicles in the UK?",
+      "answers": [
+        { "text": "Approved Document B (Volume 2)", "correct": true },
+        { "text": "Approved Document M", "correct": false },
+        { "text": "Building Act 1984", "correct": false },
+        { "text": "Fire Safety Order 2005", "correct": false }
+      ]
+    },
+    {
+      "topic": "B5: Access and Facilities for the Fire Service",
+      "question": "Why are firefighting lifts essential in tall buildings?",
+      "answers": [
+        { "text": "They allow firefighters to quickly access upper floors with equipment", "correct": true },
+        { "text": "They improve occupant evacuation times", "correct": false },
+        { "text": "They provide ventilation during a fire", "correct": false },
+        { "text": "They prevent fire spread between floors", "correct": false }
+      ]
+    },
+    {
+      "topic": "B5: Access and Facilities for the Fire Service",
+      "question": "What is the purpose of a fire appliance access zone?",
+      "answers": [
+        { "text": "To provide a dedicated area for fire service vehicles to operate near a building", "correct": true },
+        { "text": "To store fire equipment", "correct": false },
+        { "text": "To create an evacuation zone for building occupants", "correct": false },
+        { "text": "To improve natural ventilation around the building", "correct": false }
+      ]
+    },
+    {
+      "topic": "B5: Access and Facilities for the Fire Service",
+      "question": "What is the minimum size for an access road turning circle to accommodate a fire appliance?",
+      "answers": [
+        { "text": "16.8 meters", "correct": true },
+        { "text": "12.5 meters", "correct": false },
+        { "text": "20.0 meters", "correct": false },
+        { "text": "18.0 meters", "correct": false }
+      ]
+    },
+    {
+      "topic": "B5: Access and Facilities for the Fire Service",
+      "question": "Which of the following is required for buildings with deep basements to assist the fire service?",
+      "answers": [
+        { "text": "Basement ventilation systems", "correct": true },
+        { "text": "Elevator shafts", "correct": false },
+        { "text": "Roof-mounted firefighting equipment", "correct": false },
+        { "text": "Automatic fire doors", "correct": false }
+      ]
+    },
+    {
+      "topic": "B5: Access and Facilities for the Fire Service",
+      "question": "Which fire safety feature ensures that firefighters can operate effectively in tall buildings?",
+      "answers": [
+        { "text": "Firefighting shafts", "correct": true },
+        { "text": "Automatic sprinklers", "correct": false },
+        { "text": "Open staircases", "correct": false },
+        { "text": "Increased insulation in external walls", "correct": false }
+      ]
+    },
+    {
+      "topic": "B5: Access and Facilities for the Fire Service",
+      "question": "What is the function of a wet rising main in tall buildings?",
+      "answers": [
+        { "text": "It provides a constant water supply for firefighting operations", "correct": true },
+        { "text": "It prevents the spread of smoke", "correct": false },
+        { "text": "It supports the building's structural integrity", "correct": false },
+        { "text": "It improves natural ventilation", "correct": false }
+      ]
+    },
+    {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "Which of the following is a critical requirement for fire service access to buildings over 18 meters tall?",
+        "answers": [
+          { "text": "Provision of a firefighting lift", "correct": true },
+          { "text": "Provision of ground-level fire exits", "correct": false },
+          { "text": "Provision of external staircases", "correct": false },
+          { "text": "Increased number of windows", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "What is the primary purpose of fire appliance access zones?",
+        "answers": [
+          { "text": "To provide fire service vehicles a dedicated operational space near the building", "correct": true },
+          { "text": "To create additional parking for emergency personnel", "correct": false },
+          { "text": "To allow better pedestrian access", "correct": false },
+          { "text": "To increase ventilation in high-rise buildings", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "What is the recommended minimum distance between a building's fire hydrant and the building's entrance?",
+        "answers": [
+          { "text": "90 meters", "correct": true },
+          { "text": "60 meters", "correct": false },
+          { "text": "120 meters", "correct": false },
+          { "text": "150 meters", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "In high-rise residential buildings, what is the required maximum distance from a fire appliance to the building?",
+        "answers": [
+          { "text": "18 meters", "correct": true },
+          { "text": "30 meters", "correct": false },
+          { "text": "40 meters", "correct": false },
+          { "text": "50 meters", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "What type of fire main is typically used in buildings with floors exceeding 60 meters above ground level?",
+        "answers": [
+          { "text": "Wet rising main", "correct": true },
+          { "text": "Dry rising main", "correct": false },
+          { "text": "Portable fire hose", "correct": false },
+          { "text": "Fire hydrant", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "What is the minimum headroom clearance for fire appliances on access routes?",
+        "answers": [
+          { "text": "4.0 meters", "correct": true },
+          { "text": "3.5 meters", "correct": false },
+          { "text": "5.0 meters", "correct": false },
+          { "text": "3.0 meters", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "Which fire protection feature is required for buildings with more than two basement levels?",
+        "answers": [
+          { "text": "Firefighting shafts", "correct": true },
+          { "text": "Automatic closing fire doors", "correct": false },
+          { "text": "Ventilated staircases", "correct": false },
+          { "text": "Extra external staircases", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "Why is it important to provide a fire service vehicle turning area within access routes?",
+        "answers": [
+          { "text": "To allow fire appliances to maneuver and exit the site safely", "correct": true },
+          { "text": "To allow for additional parking space", "correct": false },
+          { "text": "To prevent pedestrian traffic", "correct": false },
+          { "text": "To create space for building evacuation", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "What is the primary function of fire hydrants installed near high-rise buildings?",
+        "answers": [
+          { "text": "To supply water for firefighting operations", "correct": true },
+          { "text": "To improve pedestrian safety", "correct": false },
+          { "text": "To provide water for building cooling", "correct": false },
+          { "text": "To supply water to nearby households", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "What is the role of a dry rising main in firefighting?",
+        "answers": [
+          { "text": "It allows the fire service to pump water to upper floors in a building", "correct": true },
+          { "text": "It provides structural support during fires", "correct": false },
+          { "text": "It improves air circulation in stairwells", "correct": false },
+          { "text": "It reduces the spread of smoke in fire escapes", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "Which regulation specifies the requirements for fire service vehicle access in new building developments?",
+        "answers": [
+          { "text": "Approved Document B (Volume 2)", "correct": true },
+          { "text": "Fire Safety Order 2005", "correct": false },
+          { "text": "Building Act 1984", "correct": false },
+          { "text": "Approved Document M", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "What is the function of an emergency vehicle access road in residential areas?",
+        "answers": [
+          { "text": "To provide a direct route for fire service vehicles to reach a building during an emergency", "correct": true },
+          { "text": "To serve as a pedestrian walkway", "correct": false },
+          { "text": "To enhance natural ventilation in the building", "correct": false },
+          { "text": "To create additional parking for residents", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "In buildings over 18 meters tall, what is the minimum width required for fire service access roads?",
+        "answers": [
+          { "text": "3.7 meters", "correct": true },
+          { "text": "2.5 meters", "correct": false },
+          { "text": "4.5 meters", "correct": false },
+          { "text": "3.0 meters", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "Which firefighting feature is required for all buildings with basements deeper than 10 meters?",
+        "answers": [
+          { "text": "Firefighting shafts", "correct": true },
+          { "text": "Sprinkler systems", "correct": false },
+          { "text": "Emergency lighting", "correct": false },
+          { "text": "Open staircases", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "What is the purpose of installing wet rising mains in tall buildings?",
+        "answers": [
+          { "text": "To ensure a constant water supply for firefighting on higher floors", "correct": true },
+          { "text": "To provide air circulation in emergency staircases", "correct": false },
+          { "text": "To prevent structural collapse during a fire", "correct": false },
+          { "text": "To provide water to surrounding buildings", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "Which type of fire main system is required for buildings with floors higher than 60 meters?",
+        "answers": [
+          { "text": "Wet rising main", "correct": true },
+          { "text": "Dry rising main", "correct": false },
+          { "text": "Portable fire hose", "correct": false },
+          { "text": "External hydrant", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "What is the minimum turning radius required for fire service vehicles on access roads?",
+        "answers": [
+          { "text": "16.8 meters", "correct": true },
+          { "text": "12.5 meters", "correct": false },
+          { "text": "20.0 meters", "correct": false },
+          { "text": "25.0 meters", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "Which of the following features assists firefighters in navigating through tall buildings?",
+        "answers": [
+          { "text": "Firefighting shafts", "correct": true },
+          { "text": "Glass partitions", "correct": false },
+          { "text": "Open balconies", "correct": false },
+          { "text": "Decorative staircases", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "In a building with two or more basement levels, what is required to support firefighting efforts?",
+        "answers": [
+          { "text": "Ventilation systems and firefighting shafts", "correct": true },
+          { "text": "Automatic fire doors", "correct": false },
+          { "text": "Fireproof insulation", "correct": false },
+          { "text": "Open staircases", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "Which regulation covers the requirements for fire service access and facilities for buildings in the UK?",
+        "answers": [
+          { "text": "Approved Document B (Volume 2)", "correct": true },
+          { "text": "Approved Document M", "correct": false },
+          { "text": "Fire Safety Order 2005", "correct": false },
+          { "text": "Building Act 1984", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "What is the maximum allowable distance between a building and a fire appliance access point for high-rise buildings?",
+        "answers": [
+          { "text": "18 meters", "correct": true },
+          { "text": "10 meters", "correct": false },
+          { "text": "25 meters", "correct": false },
+          { "text": "30 meters", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "Why is it important to provide adequate access routes for fire service vehicles?",
+        "answers": [
+          { "text": "To ensure fire appliances can reach the building and operate effectively during an emergency", "correct": true },
+          { "text": "To create parking spaces for emergency vehicles", "correct": false },
+          { "text": "To provide pedestrian walkways", "correct": false },
+          { "text": "To improve building aesthetics", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "Which type of fire main is typically required in buildings with floors exceeding 60 meters in height?",
+        "answers": [
+          { "text": "Wet rising main", "correct": true },
+          { "text": "Dry rising main", "correct": false },
+          { "text": "Portable fire hose", "correct": false },
+          { "text": "External fire hydrant", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "What is the minimum clearance height for fire appliances on access routes?",
+        "answers": [
+          { "text": "4.1 meters", "correct": true },
+          { "text": "3.5 meters", "correct": false },
+          { "text": "5.0 meters", "correct": false },
+          { "text": "3.0 meters", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "What is the function of a firefighting lift in tall buildings?",
+        "answers": [
+          { "text": "To transport firefighters and equipment to upper floors", "correct": true },
+          { "text": "To evacuate building occupants", "correct": false },
+          { "text": "To ventilate stairwells", "correct": false },
+          { "text": "To reduce the spread of smoke", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "Which feature of building design is crucial for providing access to deep basement levels for the fire service?",
+        "answers": [
+          { "text": "Ventilation systems and firefighting shafts", "correct": true },
+          { "text": "Elevator shafts", "correct": false },
+          { "text": "Roof-mounted firefighting equipment", "correct": false },
+          { "text": "Automatic fire doors", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "Why is it important to provide fire service vehicle turning circles in building access roads?",
+        "answers": [
+          { "text": "To allow fire appliances to maneuver and exit safely", "correct": true },
+          { "text": "To provide additional parking", "correct": false },
+          { "text": "To prevent pedestrian access", "correct": false },
+          { "text": "To improve building aesthetics", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "What is the recommended distance between a fire hydrant and the building's main entrance?",
+        "answers": [
+          { "text": "90 meters", "correct": true },
+          { "text": "60 meters", "correct": false },
+          { "text": "120 meters", "correct": false },
+          { "text": "150 meters", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "What is the function of a dry rising main in a building?",
+        "answers": [
+          { "text": "It provides a water supply for firefighting on upper floors", "correct": true },
+          { "text": "It supports the building's structure during a fire", "correct": false },
+          { "text": "It ventilates emergency stairwells", "correct": false },
+          { "text": "It reduces the spread of smoke", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "In buildings over 18 meters tall, what is the minimum width for fire appliance access roads?",
+        "answers": [
+          { "text": "3.7 meters", "correct": true },
+          { "text": "2.5 meters", "correct": false },
+          { "text": "4.5 meters", "correct": false },
+          { "text": "3.0 meters", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "Which feature ensures that firefighters have water available on higher floors in buildings over 60 meters tall?",
+        "answers": [
+          { "text": "Wet rising main", "correct": true },
+          { "text": "Dry rising main", "correct": false },
+          { "text": "Fire hydrants", "correct": false },
+          { "text": "Portable fire hoses", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "What is the primary role of a wet rising main in firefighting operations?",
+        "answers": [
+          { "text": "To provide a continuous water supply to upper floors", "correct": true },
+          { "text": "To improve air circulation", "correct": false },
+          { "text": "To support the building's structural integrity", "correct": false },
+          { "text": "To reduce noise levels", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "Which of the following is a key requirement for fire service access in buildings over 30 meters tall?",
+        "answers": [
+          { "text": "Provision of firefighting lifts", "correct": true },
+          { "text": "Provision of external staircases", "correct": false },
+          { "text": "Increased number of windows", "correct": false },
+          { "text": "Automatic fire doors", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "Why is a turning circle required for fire service vehicles in access roads?",
+        "answers": [
+          { "text": "To allow fire appliances to maneuver and exit safely", "correct": true },
+          { "text": "To prevent pedestrian access", "correct": false },
+          { "text": "To create space for parking", "correct": false },
+          { "text": "To improve the aesthetics of the road", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "In high-rise buildings, what is the purpose of a firefighting shaft?",
+        "answers": [
+          { "text": "To provide firefighters with protected access routes to upper floors", "correct": true },
+          { "text": "To allow for additional evacuation", "correct": false },
+          { "text": "To enhance the building's ventilation system", "correct": false },
+          { "text": "To reduce the building's structural load", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "What is the minimum clearance height required for fire service vehicles on access routes?",
+        "answers": [
+          { "text": "4.1 meters", "correct": true },
+          { "text": "3.5 meters", "correct": false },
+          { "text": "5.0 meters", "correct": false },
+          { "text": "3.0 meters", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "Which fire protection feature is essential for ensuring firefighter access to upper floors in buildings over 60 meters?",
+        "answers": [
+          { "text": "Wet rising mains", "correct": true },
+          { "text": "Dry rising mains", "correct": false },
+          { "text": "Fire hydrants", "correct": false },
+          { "text": "Fire-rated doors", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "Which of the following helps to ensure fire appliances can operate effectively near tall buildings?",
+        "answers": [
+          { "text": "Fire appliance access zones", "correct": true },
+          { "text": "Fire-resistant cladding", "correct": false },
+          { "text": "Decorative facades", "correct": false },
+          { "text": "Large windows", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "What is the maximum recommended distance between a fire appliance and the building it is serving?",
+        "answers": [
+          { "text": "18 meters", "correct": true },
+          { "text": "30 meters", "correct": false },
+          { "text": "45 meters", "correct": false },
+          { "text": "60 meters", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "Which type of fire main is typically required in buildings with basements deeper than 10 meters?",
+        "answers": [
+          { "text": "Wet rising main", "correct": true },
+          { "text": "Dry rising main", "correct": false },
+          { "text": "Portable fire hoses", "correct": false },
+          { "text": "External hydrants", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "Which feature is necessary to allow fire service access to deep basements in buildings?",
+        "answers": [
+          { "text": "Firefighting shafts", "correct": true },
+          { "text": "Elevator shafts", "correct": false },
+          { "text": "Roof-mounted firefighting equipment", "correct": false },
+          { "text": "Automatic fire doors", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "What is the primary purpose of a dry rising main?",
+        "answers": [
+          { "text": "To provide a water supply for firefighting on upper floors", "correct": true },
+          { "text": "To ventilate emergency stairwells", "correct": false },
+          { "text": "To reduce the spread of smoke", "correct": false },
+          { "text": "To support the building's structure", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "What is the recommended width for access roads serving buildings over 18 meters tall?",
+        "answers": [
+          { "text": "3.7 meters", "correct": true },
+          { "text": "2.5 meters", "correct": false },
+          { "text": "4.5 meters", "correct": false },
+          { "text": "3.0 meters", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "Which feature ensures that firefighters have immediate water access in tall buildings?",
+        "answers": [
+          { "text": "Wet rising mains", "correct": true },
+          { "text": "Fire hydrants", "correct": false },
+          { "text": "Portable fire hoses", "correct": false },
+          { "text": "Dry rising mains", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "What is the minimum recommended width for fire appliance access routes?",
+        "answers": [
+          { "text": "3.7 meters", "correct": true },
+          { "text": "3.0 meters", "correct": false },
+          { "text": "4.5 meters", "correct": false },
+          { "text": "2.5 meters", "correct": false }
+        ]
+      },
+      {
+        "topic": "B5: Access and Facilities for the Fire Service",
+        "question": "Which of the following helps ensure fire service access to buildings with deep basements?",
+        "answers": [
+          { "text": "Firefighting shafts and ventilation systems", "correct": true },
+          { "text": "Roof-mounted fire hoses", "correct": false },
+          { "text": "Elevator shafts", "correct": false },
+          { "text": "Fireproof doors", "correct": false }
+        ]
+      }
+    ]
+}
+
+

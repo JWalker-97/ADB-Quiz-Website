@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Approved Document B Quiz</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Fire Safety Quiz</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="quiz-container">
-        <h1 id="quiz-title">Approved Document B (Volume 2) Quiz</h1>
-        <p id="intro-text">Test your knowledge of fire safety regulations from Approved Document B. Ready to start?</p>
-        <button id="start-btn" class="btn">Start Quiz</button>
-        <div id="quiz-section" class="hide">
-            <div id="question-container">
-                <p id="question"></p>
-            </div>
-            <div id="answer-buttons" class="btn-container"></div>
-            <!-- Placeholder for Next button to prevent layout shift -->
-            <div class="next-btn-container">
-                <button id="next-btn" class="btn hide">Next</button>
-            </div>
-            <p id="result"></p>
+  <!-- Start Quiz Page -->
+  <div id="start-page" class="start-page">
+    <h1>Fire Safety Quiz</h1>
+    <img src="images/flame.png" alt="Flames" class="start-image">
+    <button id="start-btn" class="start-btn">Start Quiz</button>
+  </div>
 
-            <!-- Progress Bar -->
-            <div id="progress-container">
-                <p>Progress:</p>
-                <div id="progress-squares"></div>
-            </div>
-        </div>
-        <div id="summary-section" class="hide">
-            <h2>Quiz Summary</h2>
-            <p id="summary-text"></p>
-            <h3>Areas to Review:</h3>
-            <ul id="review-list"></ul>
-            <button id="restart-btn" class="btn">Restart Quiz</button>
-        </div>
+  <!-- Quiz Container -->
+  <div id="quiz-container" class="quiz-container hide">
+    <div id="question-container" class="question-container">
+      <h2 id="question">Question Text</h2>
+      <div id="answer-buttons" class="answer-buttons">
+        <button class="btn answer-btn">Answer 1</button>
+        <button class="btn answer-btn">Answer 2</button>
+        <button class="btn answer-btn">Answer 3</button>
+        <button class="btn answer-btn">Answer 4</button>
+      </div>
     </div>
+    <div id="progress-container" class="progress-container">
+      <p id="progress-text">Question 1 of 50</p>
+    </div>
+  </div>
 
-    <script src="app.js"></script>
+  <!-- Result Page -->
+  <div id="result-page" class="result-page hide">
+    <h1>Your Score</h1>
+    <div class="percentage-container">
+      <img src="images/flame.png" alt="Flames" class="result-image">
+      <h2 id="score-percentage">0%</h2>
+    </div>
+    <button id="retry-btn" class="retry-btn">Retry Quiz</button>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
