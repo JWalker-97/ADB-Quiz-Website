@@ -5,20 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const answerButtons = document.getElementById('answer-buttons');
     const nextButton = document.getElementById('next-btn');
     const resultContainer = document.getElementById('result');
-    const timerElement = document.getElementById('time-left');
     const progressSquares = document.getElementById('progress-squares');
-    const recapSection = document.getElementById('recap-section');
-    const recapText = document.getElementById('recap-text');
-    const certificateButton = document.getElementById('certificate-btn');
-    
+
     let currentQuestionIndex = 0;
     let score = 0;
-    let incorrect = 0;
-    const totalQuestions = 50;
-    let timeLeft = 30;
-    let countdown;
+    let totalQuestions = 50;
 
-    // Example Questions - Replace these with 50 actual questions
     const questions = [
         {
             question: "What is the minimum width of an escape route in a public building?",
@@ -38,41 +30,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 { text: "25 meters", correct: false }
             ]
         },
-        // Add more questions here to fill up to 50
+        // Add more questions here
     ];
 
-    // Initialize progress squares
+    // Initialize 50 progress squares
     for (let i = 0; i < totalQuestions; i++) {
         const square = document.createElement('div');
         square.classList.add('progress-square');
         progressSquares.appendChild(square);
     }
 
-    // Start button click event
-    startButton.addEventListener('click', () => {
-        startQuiz();  // Ensure this function is correctly triggered
-    });
+    startButton.addEventListener('click', startQuiz);
 
     function startQuiz() {
-        startButton.classList.add('hide');  // Hide the start button after clicking
-        quizSection.classList.remove('hide');  // Show the quiz section
+        startButton.classList.add('hide');
+        quizSection.classList.remove('hide');
         currentQuestionIndex = 0;
         score = 0;
-        incorrect = 0;
-        updateProgress();
-        showQuestion();  // Start showing the first question
+        showQuestion();
     }
 
     function showQuestion() {
-        resetState();  // Reset the UI for the next question
-        timeLeft = 30;
-        timerElement.innerText = timeLeft;
-        countdown = setInterval(updateTimer, 1000);  // Start the timer for the question
+        resetState();
         const currentQuestion = questions[currentQuestionIndex];
         questionContainer.innerText = currentQuestion.question;
 
-        const shuffledAnswers = shuffleAnswers(currentQuestion.answers);
-        shuffledAnswers.forEach(answer => {
+        currentQuestion.answers.forEach(answer => {
             const button = document.createElement('button');
             button.innerText = answer.text;
             button.classList.add('btn');
@@ -81,83 +64,45 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    function updateTimer() {
-        timeLeft--;
-        timerElement.innerText = timeLeft;
-        if (timeLeft <= 0) {
-            clearInterval(countdown);
-            selectAnswer(null, false);  // Automatically mark the answer as incorrect if time runs out
-        }
-    }
-
     function resetState() {
-        nextButton.classList.add('hide');  // Hide the Next button initially
+        nextButton.classList.add('hide');
         resultContainer.innerText = '';
         while (answerButtons.firstChild) {
-            answerButtons.removeChild(answerButtons.firstChild);  // Clear the previous answer buttons
+            answerButtons.removeChild(answerButtons.firstChild); // Clear answer buttons
         }
-        clearInterval(countdown);  // Stop any previous countdown timers
     }
 
     function selectAnswer(button, correct) {
         Array.from(answerButtons.children).forEach(btn => {
-            btn.disabled = true;  // Disable all answer buttons after a choice is made
+            btn.disabled = true;
         });
         if (button) {
-            button.classList.add(correct ? 'correct' : 'wrong');  // Highlight the selected button
+            button.classList.add(correct ? 'correct' : 'wrong');
         }
 
         const square = document.getElementsByClassName('progress-square')[currentQuestionIndex];
-        square.classList.add(correct ? 'correct-square' : 'wrong-square');  // Update progress squares
+        square.classList.add(correct ? 'correct-square' : 'wrong-square');
 
         resultContainer.innerText = correct ? 'Correct!' : 'Incorrect!';
         if (correct) {
             score++;
-        } else {
-            incorrect++;
         }
 
-        nextButton.classList.remove('hide');  // Show the Next button to proceed
+        nextButton.classList.remove('hide');
     }
 
     nextButton.addEventListener('click', () => {
         currentQuestionIndex++;
         if (currentQuestionIndex < questions.length) {
-            showQuestion();  // Show the next question
+            showQuestion();
         } else {
-            showRecap();  // Show recap when all questions are answered
+            showResult();
         }
-        updateProgress();
     });
 
-    function updateProgress() {
-        timerElement.innerText = timeLeft;  // Update the displayed time
-    }
-
-    function showRecap() {
-        quizSection.classList.add('hide');  // Hide the quiz section
-        recapSection.classList.remove('hide');  // Show the recap section
-
-        recapText.innerText = `You got ${score} out of ${totalQuestions} correct. Areas to improve: [summary of weak topics]`;  // Example recap
-    }
-
-    certificateButton.addEventListener('click', () => {
-        generateCertificate();  // Generate the certificate on button click
-    });
-
-    function generateCertificate() {
-        const doc = new jsPDF();
-        doc.text(`Certificate of Completion`, 20, 20);
-        doc.text(`Congratulations, you scored ${score} out of ${totalQuestions} on the AD B quiz.`, 20, 40);
-        doc.save('certificate.pdf');  // Save the certificate as a downloadable PDF
-    }
-
-    // Shuffle answers for randomness
-    function shuffleAnswers(answers) {
-        for (let i = answers.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [answers[i], answers[j]] = [answers[j], answers[i]];
-        }
-        return answers;
+    function showResult() {
+        questionContainer.innerText = `Quiz complete! You scored ${score} out of ${totalQuestions}.`;
+        nextButton.classList.add('hide');
+        resultContainer.innerText = ''; // Clear result text
     }
 });
