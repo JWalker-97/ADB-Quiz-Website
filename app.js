@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const button = document.createElement('button');
             button.innerText = answer.text;
             button.classList.add('btn');
+            button.dataset.correct = answer.correct;
             button.addEventListener('click', () => selectAnswer(button, answer.correct, question));
             answerButtonsElement.appendChild(button);
         });
@@ -76,21 +77,26 @@ document.addEventListener('DOMContentLoaded', () => {
     function selectAnswer(selectedButton, correct, question) {
         Array.from(answerButtonsElement.children).forEach(button => {
             button.disabled = true;
-            if (button === selectedButton) {
-                button.classList.add(correct ? 'correct' : 'wrong');
+            if (button.dataset.correct === 'true') {
+                button.classList.add('correct');
             }
         });
+
+        if (!correct) {
+            selectedButton.classList.add('wrong');
+            // Highlight the correct answer
+            const correctButton = Array.from(answerButtonsElement.children).find(button => button.dataset.correct === 'true');
+            correctButton.classList.add('correct-answer');
+            incorrectQuestions.push(question);
+        } else {
+            score++;
+            selectedButton.classList.add('correct');
+        }
 
         const progressSquare = progressSquares.children[currentQuestionIndex];
         progressSquare.classList.add(correct ? 'correct-square' : 'wrong-square');
 
-        if (correct) {
-            score++;
-            resultElement.innerText = 'Correct!';
-        } else {
-            resultElement.innerText = 'Incorrect!';
-            incorrectQuestions.push(question);
-        }
+        resultElement.innerText = correct ? 'Correct!' : 'Incorrect!';
 
         nextButton.classList.remove('hide');
     }
@@ -126,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return array.sort(() => Math.random() - 0.5);
     }
 
-    // 50 Questions from Approved Document B Volume 2
+    // Full list of 50 questions from Approved Document B Volume 2
     const questions = [
         // **Section B1: Means of warning and escape** (10 questions)
         {
