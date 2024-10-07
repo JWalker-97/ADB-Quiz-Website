@@ -71,9 +71,11 @@ function showQuestion() {
   const currentQuestion = questions[currentQuestionIndex];
 
   // Update topic heading based on current question index
-  const topicCode = getTopicForQuestion(currentQuestionIndex);
+  // Remove redundant topic code
   const topicName = currentQuestion.topic;
-  topicHeadingElement.innerText = `${topicCode}: ${topicName}`;
+  topicHeadingElement.innerText = topicName;
+
+  // Center the topic heading (handled in CSS)
 
   // Update question number
   questionNumberElement.innerText = `Q${currentQuestionIndex + 1}`;
@@ -111,16 +113,33 @@ function selectAnswer(e) {
   const selectedButton = e.target;
   const correct = selectedButton.dataset.correct === 'true';
 
+  // Remove 'selected' class from any other buttons
+  Array.from(answerButtonsElement.children).forEach((button) => {
+    button.classList.remove('selected');
+  });
+
   // Mark selected button
   selectedButton.classList.add('selected');
 
   if (correct) {
     score++;
+    // Only change the selected button to correct
+    setStatusClass(selectedButton, true);
+  } else {
+    // Change the selected button to wrong
+    setStatusClass(selectedButton, false);
+    // Highlight the correct answer
+    const correctButton = Array.from(answerButtonsElement.children).find(
+      (button) => button.dataset.correct === 'true'
+    );
+    setStatusClass(correctButton, true);
   }
+
+  // Disable all buttons
   Array.from(answerButtonsElement.children).forEach((button) => {
-    setStatusClass(button, button.dataset.correct === 'true');
     button.disabled = true;
   });
+
   nextButton.classList.remove('hide');
 }
 
