@@ -2,39 +2,34 @@ const questionContainer = document.getElementById('question');
 const answerButtons = document.getElementById('answer-buttons');
 const nextButton = document.getElementById('next-btn');
 const resultContainer = document.getElementById('result');
+const progressCorrect = document.getElementById('progress-correct');
+const progressWrong = document.getElementById('progress-wrong');
 
 let currentQuestionIndex = 0;
 let score = 0;
+let incorrect = 0;
+const totalQuestions = 50; // We will simulate 50 questions
 
-// Sample questions related to Approved Document B (Volume 2)
-const questions = [
-    {
-        question: "What is the minimum width of escape routes in a public building?",
-        answers: [
-            { text: "1.0 meter", correct: true },
-            { text: "0.8 meters", correct: false },
-            { text: "1.5 meters", correct: false },
-            { text: "2.0 meters", correct: false }
-        ]
-    },
-    {
-        question: "What is the maximum travel distance in an escape route in a building?",
-        answers: [
-            { text: "18 meters", correct: false },
-            { text: "15 meters", correct: true },
-            { text: "20 meters", correct: false },
-            { text: "12 meters", correct: false }
-        ]
-    },
-    // Add more questions as needed
-];
+// Sample set of 50 questions (abbreviated for the example)
+const questions = Array.from({ length: totalQuestions }, (v, i) => ({
+    question: `Question ${i + 1}: What is the width of escape routes?`,
+    answers: [
+        { text: "1.0 meter", correct: i % 2 === 0 },  // Alternate correct answers for example purposes
+        { text: "0.8 meters", correct: false },
+        { text: "1.5 meters", correct: i % 2 !== 0 },
+        { text: "2.0 meters", correct: false }
+    ]
+}));
 
 // Start quiz
 startQuiz();
 
 function startQuiz() {
     currentQuestionIndex = 0;
+    score = 0;
+    incorrect = 0;
     nextButton.classList.add('hide');
+    updateProgress();
     showQuestion();
 }
 
@@ -64,17 +59,20 @@ function resetState() {
 
 // Handle answer selection
 function selectAnswer(button, correct) {
-    if (correct) {
-        button.classList.add('correct');
-        score++;
-        resultContainer.innerText = `Correct! Your current score is: ${score}`;
-    } else {
-        button.classList.add('wrong');
-        resultContainer.innerText = `Incorrect. Try again.`;
-    }
-    Array.from(answerButtons.children).forEach(button => {
-        button.disabled = true;
+    Array.from(answerButtons.children).forEach(btn => {
+        btn.disabled = true;
+        if (correct && btn === button) {
+            btn.classList.add('correct');
+            score++;
+            resultContainer.innerText = `Correct!`;
+        } else if (!correct && btn === button) {
+            btn.classList.add('wrong');
+            resultContainer.innerText = `Incorrect. Try again.`;
+            incorrect++;
+        }
     });
+    
+    updateProgress();
     nextButton.classList.remove('hide');
 }
 
@@ -88,7 +86,15 @@ nextButton.addEventListener('click', () => {
     }
 });
 
+function updateProgress() {
+    const correctPercentage = (score / totalQuestions) * 100;
+    const wrongPercentage = (incorrect / totalQuestions) * 100;
+
+    progressCorrect.style.width = correctPercentage + "%";
+    progressWrong.style.width = wrongPercentage + "%";
+}
+
 function showFinalResult() {
-    resultContainer.innerText = `Quiz complete! Your final score is: ${score}`;
+    resultContainer.innerText = `Quiz complete! You got ${score} correct out of ${totalQuestions}.`;
     nextButton.classList.add('hide');
 }
