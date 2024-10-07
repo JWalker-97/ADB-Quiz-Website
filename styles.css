@@ -1,11 +1,11 @@
+/* General Page Styling */
 body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('https://www.publicdomainpictures.net/pictures/270000/velka/fire-background.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background-color: #2E2E2E; /* Dark grey background */
     margin: 0;
     color: white;
 }
