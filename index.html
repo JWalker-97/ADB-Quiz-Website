@@ -1,3 +1,5 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,37 +8,35 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Start Quiz Page -->
-  <div id="start-page" class="start-page">
+  <!-- Header -->
+  <header>
     <h1>Fire Safety Quiz</h1>
-    <img src="images/flame.png" alt="Flames" class="start-image">
-    <button id="start-btn" class="start-btn">Start Quiz</button>
+  </header>
+
+  <!-- Start Button -->
+  <div class="container">
+    <button id="start-btn" class="start-btn btn">Start Quiz</button>
   </div>
 
-  <!-- Quiz Container -->
-  <div id="quiz-container" class="quiz-container hide">
-    <div id="question-container" class="question-container">
-      <h2 id="question">Question Text</h2>
-      <div id="answer-buttons" class="answer-buttons">
-        <button class="btn answer-btn">Answer 1</button>
-        <button class="btn answer-btn">Answer 2</button>
-        <button class="btn answer-btn">Answer 3</button>
-        <button class="btn answer-btn">Answer 4</button>
-      </div>
+  <!-- Question Container -->
+  <div id="question-container" class="container hide">
+    <div id="question">Question text</div>
+    <div id="answer-buttons" class="btn-grid">
+      <!-- Answer buttons will be dynamically added here -->
     </div>
-    <div id="progress-container" class="progress-container">
-      <p id="progress-text">Question 1 of 50</p>
+    <div class="controls">
+      <button id="next-btn" class="next-btn btn hide">Next</button>
+    </div>
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div class="progress-bar-fill" id="progress-bar-fill"></div>
     </div>
   </div>
 
-  <!-- Result Page -->
-  <div id="result-page" class="result-page hide">
-    <h1>Your Score</h1>
-    <div class="percentage-container">
-      <img src="images/flame.png" alt="Flames" class="result-image">
-      <h2 id="score-percentage">0%</h2>
-    </div>
-    <button id="retry-btn" class="retry-btn">Retry Quiz</button>
+  <!-- Result Container -->
+  <div id="result-container" class="container hide">
+    <h2 id="score">You scored X out of Y!</h2>
+    <button id="restart-btn" class="restart-btn btn">Restart Quiz</button>
   </div>
 
   <script src="app.js"></script>
