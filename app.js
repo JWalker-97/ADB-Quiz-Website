@@ -1,17 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // DOM elements
+    const startButton = document.getElementById('start-btn');
+    const quizSection = document.getElementById('quiz-section');
     const questionContainer = document.getElementById('question');
     const answerButtons = document.getElementById('answer-buttons');
     const nextButton = document.getElementById('next-btn');
     const resultContainer = document.getElementById('result');
+    const timerElement = document.getElementById('time-left');
     const progressSquares = document.getElementById('progress-squares');
-
+    const recapSection = document.getElementById('recap-section');
+    const recapText = document.getElementById('recap-text');
+    const certificateButton = document.getElementById('certificate-btn');
+    
     let currentQuestionIndex = 0;
     let score = 0;
     let incorrect = 0;
-    const totalQuestions = 50;
-    const totalQuestionsPerSection = 10;
-
+    let totalQuestions = 50;
+    let timeLeft = 30;
+    let countdown;
+    
+    const questions = [ /* 50 questions here */ ];
+    
     // Initialize progress squares
     for (let i = 0; i < totalQuestions; i++) {
         const square = document.createElement('div');
@@ -19,60 +27,26 @@ document.addEventListener('DOMContentLoaded', () => {
         progressSquares.appendChild(square);
     }
 
-    // Array of questions based on AD B
-    const questions = [
-        // 10 Questions from B1
-        {
-            question: "B1: What is the minimum width of an escape route in a public building?",
-            answers: [
-                { text: "1.0 meter", correct: true },
-                { text: "0.8 meters", correct: false },
-                { text: "1.5 meters", correct: false },
-                { text: "2.0 meters", correct: false }
-            ]
-        },
-        {
-            question: "B1: In a two-story building, what is the maximum travel distance for escape in one direction?",
-            answers: [
-                { text: "9 meters", correct: true },
-                { text: "18 meters", correct: false },
-                { text: "25 meters", correct: false },
-                { text: "15 meters", correct: false }
-            ]
-        },
-        // Add additional questions for B1, B2, B3, B4, and B5 sections here
-    ];
-
-    // Shuffle answers and randomize the correct one
-    function shuffleAnswers(question) {
-        const shuffledAnswers = [...question.answers];
-        for (let i = shuffledAnswers.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [shuffledAnswers[i], shuffledAnswers[j]] = [shuffledAnswers[j], shuffledAnswers[i]];
-        }
-        return shuffledAnswers;
-    }
-
-    // Start the quiz
-    startQuiz();
+    startButton.addEventListener('click', startQuiz);
 
     function startQuiz() {
+        startButton.classList.add('hide');
+        quizSection.classList.remove('hide');
         currentQuestionIndex = 0;
         score = 0;
         incorrect = 0;
-        nextButton.classList.add('hide'); // Hide next button initially
         updateProgress();
         showQuestion();
     }
 
-    // Display the current question
     function showQuestion() {
         resetState();
+        timeLeft = 30;
+        timerElement.innerText = timeLeft;
+        countdown = setInterval(updateTimer, 1000);
         const currentQuestion = questions[currentQuestionIndex];
         questionContainer.innerText = currentQuestion.question;
-
-        const shuffledAnswers = shuffleAnswers(currentQuestion);
-
+        const shuffledAnswers = shuffleAnswers(currentQuestion.answers);
         shuffledAnswers.forEach(answer => {
             const button = document.createElement('button');
             button.innerText = answer.text;
@@ -82,31 +56,55 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Reset the state for the next question
+    function updateTimer() {
+        timeLeft--;
+        timerElement.innerText = timeLeft;
+        if (timeLeft <= 0) {
+            clearInterval(countdown);
+            selectAnswer(null, false);
+        }
+    }
+
     function resetState() {
         nextButton.classList.add('hide');
         resultContainer.innerText = '';
         while (answerButtons.firstChild) {
-            answerButtons.removeChild(answerButtons.firstChild); // Clear answer buttons
+            answerButtons.removeChild(answerButtons.firstChild);
         }
+        clearInterval(countdown);
     }
 
-    // Handle answer selection
     function selectAnswer(button, correct) {
         Array.from(answerButtons.children).forEach(btn => {
-            btn.disabled = true; // Disable all buttons after selecting an answer
-            if (btn === button) {
-                btn.classList.add(correct ? 'correct' : 'wrong');
-            }
+            btn.disabled = true;
         });
-
-        const progressSquare = document.getElementsByClassName('progress-square')[currentQuestionIndex];
-        progressSquare.classList.add(correct ? 'correct-square' : 'wrong-square');
-
+        if (button) {
+            button.classList.add(correct ? 'correct' : 'wrong');
+        }
+        const square = document.getElementsByClassName('progress-square')[currentQuestionIndex];
+        square.classList.add(correct ? 'correct-square' : 'wrong-square');
+        resultContainer.innerText = correct ? 'Correct!' : 'Incorrect';
         if (correct) {
             score++;
-            resultContainer.innerText = 'Correct!';
         } else {
             incorrect++;
-            resultContainer.innerText = 'Incorrect!';
         }
+        nextButton.classList.remove('hide');
+    }
+
+    nextButton.addEventListener('click', () => {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < questions.length) {
+            showQuestion();
+        } else {
+            showRecap();
+        }
+        updateProgress();
+    });
+
+    function updateProgress() {
+        timerElement.innerText = timeLeft;
+    }
+
+    function showRecap() {
+        quizSection

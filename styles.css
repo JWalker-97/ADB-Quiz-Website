@@ -90,3 +90,19 @@ h1 {
 .wrong-square {
     background-color: #F44336;
 }
+
+#timer {
+    font-size: 1.2rem;
+    color: #FFD700;
+}
+
+/* Recap Section */
+#recap-section {
+    margin-top: 30px;
+}
+
+#certificate-btn {
+    margin-top: 20px;
+    background-color: #FFD700;
+    color: black;
+}

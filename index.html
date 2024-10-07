@@ -9,19 +9,33 @@
 <body>
     <div class="quiz-container">
         <h1>Approved Document B (Volume 2) Quiz</h1>
-        <div id="question-container">
-            <p id="question"></p>
-        </div>
-        <div id="answer-buttons" class="btn-container"></div>
-        <button id="next-btn" class="btn hide">Next</button>
-        <p id="result"></p>
-        
-        <!-- Progress Bar (50 Squares) -->
-        <div id="progress-container">
-            <p>Progress:</p>
-            <div id="progress-bar" class="progress-bar">
-                <!-- 50 squares for each question -->
-                <div id="progress-squares"></div>
+        <p id="intro-text">Test your knowledge of fire safety regulations from Approved Document B. Ready to start?</p>
+        <button id="start-btn" class="btn">Start Quiz</button>
+        <div id="quiz-section" class="hide">
+            <div id="question-container">
+                <p id="question"></p>
+            </div>
+            <div id="answer-buttons" class="btn-container"></div>
+            <button id="next-btn" class="btn hide">Next</button>
+            <p id="result"></p>
+
+            <!-- Timer -->
+            <p id="timer">Time left: <span id="time-left">30</span>s</p>
+
+            <!-- Progress Bar (50 Squares) -->
+            <div id="progress-container">
+                <p>Progress:</p>
+                <div id="progress-bar" class="progress-bar">
+                    <!-- 50 squares for each question -->
+                    <div id="progress-squares"></div>
+                </div>
+            </div>
+
+            <!-- Recap Section -->
+            <div id="recap-section" class="hide">
+                <h2>Recap & Summary</h2>
+                <p id="recap-text"></p>
+                <button id="certificate-btn" class="btn">Download Certificate</button>
             </div>
         </div>
     </div>
