@@ -4,6 +4,7 @@
 const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
 const restartButton = document.getElementById('restart-btn');
+const startPage = document.getElementById('start-page');
 const questionContainerElement = document.getElementById('question-container');
 const topicHeadingElement = document.getElementById('topic-heading');
 const questionElement = document.getElementById('question');
@@ -53,7 +54,7 @@ async function fetchQuestions() {
 
 // Start the Game
 async function startGame() {
-  startButton.classList.add('hide');
+  startPage.classList.add('hide');
   await fetchQuestions();
   currentQuestionIndex = 0;
   score = 0;
@@ -120,7 +121,7 @@ function showResult() {
 // Restart Game
 function restartGame() {
   resultContainer.classList.add('hide');
-  startButton.classList.remove('hide');
+  startPage.classList.remove('hide');
 }
 
 // Utility Functions
