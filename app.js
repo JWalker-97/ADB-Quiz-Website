@@ -8,18 +8,43 @@ const progressWrong = document.getElementById('progress-wrong');
 let currentQuestionIndex = 0;
 let score = 0;
 let incorrect = 0;
-const totalQuestions = 50;
+const totalQuestions = 50; // Total number of questions in the quiz
 
-// Sample set of 50 questions (replace with actual questions)
-const questions = Array.from({ length: totalQuestions }, (v, i) => ({
-    question: `Question ${i + 1}: What is the width of escape routes?`,
-    answers: [
-        { text: "1.0 meter", correct: i % 2 === 0 },  // Alternate correct answers for example purposes
-        { text: "0.8 meters", correct: false },
-        { text: "1.5 meters", correct: i % 2 !== 0 },
-        { text: "2.0 meters", correct: false }
-    ]
-}));
+// Array of 50 questions related to Approved Document B (Volume 2)
+const questions = [
+    {
+        question: "What is the minimum width of an escape route in a public building?",
+        answers: [
+            { text: "1.0 meter", correct: true },
+            { text: "0.8 meters", correct: false },
+            { text: "1.5 meters", correct: false },
+            { text: "2.0 meters", correct: false }
+        ]
+    },
+    {
+        question: "What is the maximum travel distance to a protected stairway in a single direction?",
+        answers: [
+            { text: "9 meters", correct: true },
+            { text: "18 meters", correct: false },
+            { text: "25 meters", correct: false },
+            { text: "15 meters", correct: false }
+        ]
+    },
+    // Add more questions here following this format
+];
+
+// Add additional questions here to reach 50 questions
+for (let i = 2; i < 50; i++) {
+    questions.push({
+        question: `Question ${i + 1}: What is the requirement related to fire safety for section ${i}?`,
+        answers: [
+            { text: `Answer ${i}.1`, correct: true },
+            { text: `Answer ${i}.2`, correct: false },
+            { text: `Answer ${i}.3`, correct: false },
+            { text: `Answer ${i}.4`, correct: false }
+        ]
+    });
+}
 
 // Start quiz
 startQuiz();
@@ -86,6 +111,7 @@ nextButton.addEventListener('click', () => {
     } else {
         showFinalResult();
     }
+    updateProgress();
 });
 
 // Update the progress bar
