@@ -1,51 +1,52 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
+    background-color: #2E2E2E; /* Dark grey background */
+    color: white;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #2E2E2E;
-    margin: 0;
-    color: white;
+    min-height: 100vh;
 }
 
 .quiz-container {
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.85);
     padding: 20px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
     max-width: 600px;
     text-align: center;
 }
 
-h1 {
-    font-size: 2rem;
+h1, h2, h3 {
     color: #FFD700;
 }
 
-.btn-container {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
 .btn {
-    padding: 10px 20px;
-    margin: 10px;
     background-color: #FF4500;
     color: white;
+    padding: 10px 20px;
+    margin: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
     width: 40%;
-    /* Prevent buttons from shifting or moving */
-    flex-shrink: 0;
+    flex-shrink: 0; /* Prevent buttons from shrinking */
 }
 
 .btn:hover {
     background-color: #FF6347;
+}
+
+.btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-container .btn {
+    width: 40%;
+    margin: 10px;
 }
 
 .hide {
@@ -54,15 +55,17 @@ h1 {
 
 .correct {
     background-color: #4CAF50;
+    color: white;
 }
 
 .wrong {
     background-color: #F44336;
+    color: white;
 }
 
 #result {
-    margin-top: 20px;
     font-size: 1.2rem;
+    margin-top: 20px;
 }
 
 #progress-container {
@@ -71,13 +74,13 @@ h1 {
 
 #progress-squares {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .progress-square {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     background-color: white;
     border: 1px solid #FFD700;
     margin: 2px;
@@ -89,4 +92,11 @@ h1 {
 
 .wrong-square {
     background-color: #F44336;
+}
+
+#summary-section ul {
+    list-style-type: disc;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 400px;
 }
