@@ -5,6 +5,7 @@ const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
 const restartButton = document.getElementById('restart-btn');
 const questionContainerElement = document.getElementById('question-container');
+const topicHeadingElement = document.getElementById('topic-heading');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 const progressBarFill = document.getElementById('progress-bar-fill');
@@ -33,19 +34,18 @@ async function fetchQuestions() {
   try {
     const response = await fetch('questions.json');
     const data = await response.json();
+
     questions = [];
 
-    // Select 10 random questions from each section
+    // Sections B1 to B5
     const sections = ['B1', 'B2', 'B3', 'B4', 'B5'];
     sections.forEach((section) => {
-      const sectionQuestions = data[section];
-      const shuffledSectionQuestions = shuffleArray(sectionQuestions);
-      const selectedQuestions = shuffledSectionQuestions.slice(0, 10);
-      questions = questions.concat(selectedQuestions);
+      let sectionQuestions = data[section];
+      sectionQuestions = shuffleArray(sectionQuestions).slice(0, 10);
+      questions = questions.concat(sectionQuestions);
     });
 
-    // Shuffle all selected questions
-    questions = shuffleArray(questions);
+    // No need to shuffle the entire questions array since we want to maintain the order
   } catch (error) {
     console.error('Error fetching questions:', error);
   }
@@ -67,6 +67,11 @@ async function startGame() {
 function showQuestion() {
   resetState();
   const currentQuestion = questions[currentQuestionIndex];
+
+  // Update topic heading based on current question index
+  const topic = getTopicForQuestion(currentQuestionIndex);
+  topicHeadingElement.innerText = `Topic: ${topic} - ${currentQuestion.topic}`;
+
   questionElement.innerText = currentQuestion.question;
   currentQuestion.answers.forEach((answer) => {
     const button = document.createElement('button');
@@ -141,4 +146,19 @@ function shuffleArray(array) {
 function updateProgressBar() {
   const progressPercentage = ((currentQuestionIndex) / questions.length) * 100;
   progressBarFill.style.width = `${progressPercentage}%`;
+}
+
+// Get Topic for Current Question Index
+function getTopicForQuestion(index) {
+  if (index < 10) {
+    return 'B1';
+  } else if (index < 20) {
+    return 'B2';
+  } else if (index < 30) {
+    return 'B3';
+  } else if (index < 40) {
+    return 'B4';
+  } else {
+    return 'B5';
+  }
 }

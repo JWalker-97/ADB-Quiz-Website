@@ -27,6 +27,13 @@ header h1 {
   color: #ff4500; /* Fire theme color */
 }
 
+/* Topic Heading */
+#topic-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ff4500; /* Fire theme color */
+}
+
 /* Question Container */
 #question-container {
   background-color: #2e2e2e;
@@ -74,7 +81,7 @@ header h1 {
   text-align: center;
 }
 
-#start-btn, #next-btn {
+#start-btn, #next-btn, #restart-btn {
   background-color: #ff4500;
   color: #ffffff;
   border: none;
@@ -84,7 +91,7 @@ header h1 {
   cursor: pointer;
 }
 
-#start-btn:hover, #next-btn:hover {
+#start-btn:hover, #next-btn:hover, #restart-btn:hover {
   background-color: #e03e00;
 }
 
@@ -119,20 +126,6 @@ header h1 {
 #score {
   font-size: 48px;
   margin-bottom: 20px;
-}
-
-#restart-btn {
-  background-color: #ff4500;
-  color: #ffffff;
-  border: none;
-  padding: 15px 30px;
-  font-size: 18px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-#restart-btn:hover {
-  background-color: #e03e00;
 }
 
 /* Fire Theme Decorations */
