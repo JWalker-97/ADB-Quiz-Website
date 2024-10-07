@@ -1,11 +1,10 @@
-/* General Page Styling */
 body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #2E2E2E; /* Dark grey background */
+    background-color: #2E2E2E;
     margin: 0;
     color: white;
 }
@@ -41,6 +40,8 @@ h1 {
     cursor: pointer;
     transition: background-color 0.3s ease;
     width: 40%;
+    /* Prevent buttons from shifting or moving */
+    flex-shrink: 0;
 }
 
 .btn:hover {

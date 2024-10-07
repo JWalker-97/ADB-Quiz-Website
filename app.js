@@ -6,12 +6,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextButton = document.getElementById('next-btn');
     const resultContainer = document.getElementById('result');
     const progressSquares = document.getElementById('progress-squares');
+    const quizTitle = document.getElementById('quiz-title');
+    const introText = document.getElementById('intro-text');
 
     let currentQuestionIndex = 0;
     let score = 0;
-    let totalQuestions = 50;
+    const totalQuestions = 50;
 
+    // Full 50-question array from AD B
     const questions = [
+        // B1: Means of warning and escape
         {
             question: "What is the minimum width of an escape route in a public building?",
             answers: [
@@ -30,7 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 { text: "25 meters", correct: false }
             ]
         },
-        // Add more questions here
+        // Add more questions for B1, B2, B3, B4, and B5 here (50 questions total)
+        // Randomized correct answers for every question
     ];
 
     // Initialize 50 progress squares
@@ -43,8 +48,12 @@ document.addEventListener('DOMContentLoaded', () => {
     startButton.addEventListener('click', startQuiz);
 
     function startQuiz() {
+        // Hide the title and intro when the quiz starts
+        quizTitle.classList.add('hide');
+        introText.classList.add('hide');
         startButton.classList.add('hide');
         quizSection.classList.remove('hide');
+
         currentQuestionIndex = 0;
         score = 0;
         showQuestion();
@@ -55,7 +64,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentQuestion = questions[currentQuestionIndex];
         questionContainer.innerText = currentQuestion.question;
 
-        currentQuestion.answers.forEach(answer => {
+        const shuffledAnswers = shuffleAnswers(currentQuestion.answers);
+        shuffledAnswers.forEach(answer => {
             const button = document.createElement('button');
             button.innerText = answer.text;
             button.classList.add('btn');
@@ -104,5 +114,14 @@ document.addEventListener('DOMContentLoaded', () => {
         questionContainer.innerText = `Quiz complete! You scored ${score} out of ${totalQuestions}.`;
         nextButton.classList.add('hide');
         resultContainer.innerText = ''; // Clear result text
+    }
+
+    // Shuffle answers for randomness
+    function shuffleAnswers(answers) {
+        for (let i = answers.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [answers[i], answers[j]] = [answers[j], answers[i]];
+        }
+        return answers;
     }
 });
