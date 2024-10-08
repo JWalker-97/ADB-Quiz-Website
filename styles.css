@@ -132,6 +132,7 @@ header h1 {
 .controls {
   margin-top: 20px;
   text-align: center;
+  min-height: 60px; /* Reserve space for buttons */
 }
 
 #next-btn, #restart-btn {
@@ -142,6 +143,11 @@ header h1 {
   font-size: 18px;
   border-radius: 8px;
   cursor: pointer;
+  visibility: visible;
+}
+
+#next-btn.hide {
+  visibility: hidden;
 }
 
 #next-btn:hover, #restart-btn:hover {
@@ -183,14 +189,16 @@ header h1 {
 #overall-score {
   position: relative;
   width: 200px;
-  height: 200px;
-  margin-right: 40px; /* Increased space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 60px; /* Increased space */
 }
 
 #flame-background {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 200px;
 }
 
 #flame-image {
@@ -200,7 +208,7 @@ header h1 {
 
 #percentage-score {
   position: absolute;
-  top: 50%;
+  top: 55%; /* Centered in flame */
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 48px;
@@ -209,7 +217,7 @@ header h1 {
 }
 
 #total-score {
-  margin-top: 10px;
+  margin-top: 20px; /* Moved slightly lower */
   font-size: 24px;
   color: #ffffff;
 }
@@ -219,7 +227,7 @@ header h1 {
   display: flex;
   border-radius: 8px;
   overflow: hidden;
-  /* Glow will be set dynamically based on the selected tab */
+  /* Glow will be set dynamically */
 }
 
 /* Tabs */
@@ -250,7 +258,7 @@ header h1 {
 }
 
 .tablinks.active {
-  background-color: #2e2e2e; /* Same as the summary box */
+  background-color: #2e2e2e; /* Match summary box */
 }
 
 .tab-score {
@@ -380,6 +388,10 @@ body::before {
 
   /* Adjust overall score section */
   #overall-score {
+    width: 150px;
+  }
+
+  #flame-background {
     width: 150px;
     height: 150px;
   }

@@ -63,18 +63,44 @@ async function fetchQuestions() {
 
     questions = [];
 
+    // Collect all questions and assign unique IDs
+    let allQuestions = [];
+    let questionId = 0;
+
     // Sections B1 to B5
     const sections = ['B1', 'B2', 'B3', 'B4', 'B5'];
     sections.forEach((section) => {
-      let sectionQuestions = data[section];
-      sectionQuestions = shuffleArray(sectionQuestions).slice(0, 10);
-      sectionQuestions.forEach((question) => {
-        question.section = section; // Add section info to each question
+      data[section].forEach((question) => {
+        question.section = section;
+        question.id = questionId++;
+        allQuestions.push(question);
       });
-      questions = questions.concat(sectionQuestions);
     });
 
-    // No need to shuffle the entire questions array since we want to maintain the order
+    // Ensure uniqueness by shuffling all questions and selecting unique ones
+    const selectedAnswers = new Set();
+    allQuestions = shuffleArray(allQuestions);
+
+    // Select 10 unique questions per section without duplicates
+    sections.forEach((section) => {
+      const sectionQuestions = allQuestions.filter((q) => q.section === section);
+      const selectedSectionQuestions = [];
+
+      for (const question of sectionQuestions) {
+        // Check if a question with the same answer already exists
+        const answerTexts = question.answers.map((a) => a.text);
+        const isDuplicateAnswer = answerTexts.some((text) => selectedAnswers.has(text));
+
+        if (!isDuplicateAnswer && selectedSectionQuestions.length < 10) {
+          selectedSectionQuestions.push(question);
+          answerTexts.forEach((text) => selectedAnswers.add(text));
+        }
+
+        if (selectedSectionQuestions.length === 10) break;
+      }
+
+      questions = questions.concat(selectedSectionQuestions);
+    });
   } catch (error) {
     console.error('Error fetching questions:', error);
   }
@@ -273,17 +299,19 @@ function generateFeedbackForSection(section) {
 
 // Map topics to ADB sections
 const topicToADBSection = {
-  // Example mappings for B1 topics
+  // B1 Topics
   'Fire detection and alarm systems': 'Section 1: Fire detection and alarm systems',
   'Design for horizontal escape': 'Section 2: Design for horizontal escape',
   'Design for vertical escape': 'Section 3: Design for vertical escape',
-  // Add mappings for other topics accordingly
-
-  // Example mappings for B2 topics
+  // B2 Topics
   'Internal fire spread (linings)': 'Section 4: Internal fire spread (linings)',
-  // Continue adding mappings for B3, B4, B5
-
-  // Ensure that all topics used in the questions are mapped here
+  // B3 Topics
+  'Internal fire spread (structure)': 'Section 5: Internal fire spread (structure)',
+  // B4 Topics
+  'External fire spread': 'Section 6: External fire spread',
+  // B5 Topics
+  'Access and facilities for the fire service': 'Section 7: Access and facilities for the fire service',
+  // Add other topics as necessary
 };
 
 // Restart Game
