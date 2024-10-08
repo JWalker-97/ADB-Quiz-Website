@@ -27,28 +27,27 @@ header {
 header h1 {
   font-size: 36px;
   color: #ff4500;
-  margin-bottom: 10px;
-}
-
-/* Cover Image */
-#cover-image {
-  display: block;
-  margin: 0 auto;
-  width: 500px; /* Adjusted width to align between 'r' and 'Q' */
-  max-width: 90%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Adjusted margin to create gap below title */
 }
 
 /* Start Page */
 #start-page {
-  margin-top: 20px;
+  margin-top: 0; /* Removed top margin since header has bottom margin */
+}
+
+#cover-image {
+  display: block;
+  margin: 0 auto;
+  width: 500px; /* Adjusted width as before */
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px; /* Gap below image */
 }
 
 #intro-text {
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Gap below intro text */
 }
 
 .start-btn {
