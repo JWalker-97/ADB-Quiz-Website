@@ -13,8 +13,7 @@
 
   <!-- Start Page -->
   <div id="start-page" class="container">
-    <!-- Moved Image into Start Page -->
-    <img src="ad b cover.png" alt="Approved Document B Volume 2 Cover" id="cover-image">
+    <img src="ad_b_cover.png" alt="Approved Document B Volume 2 Cover" id="cover-image">
     <p id="intro-text">
       Welcome to the Approved Document B Volume 2 Quiz! Test your knowledge with 50 questions covering topics B1 to B5. At the end, you'll receive your score and areas to focus on.
     </p>
@@ -42,8 +41,55 @@
 
   <!-- Result Container -->
   <div id="result-container" class="container hide">
-    <h2 id="score">You scored X out of Y!</h2>
+    <div id="overall-score">
+      <!-- Flame background and overall percentage -->
+      <div id="flame-background">
+        <img src="flame.png" alt="Flame" id="flame-image">
+        <div id="percentage-score">80%</div>
+      </div>
+    </div>
     <p id="feedback"></p>
+    <!-- Vertical Tabs for B1 - B5 -->
+    <div class="tabs">
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'B1')">B1<br><span class="tab-score" id="B1-score"></span></button>
+      </div>
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'B2')">B2<br><span class="tab-score" id="B2-score"></span></button>
+      </div>
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'B3')">B3<br><span class="tab-score" id="B3-score"></span></button>
+      </div>
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'B4')">B4<br><span class="tab-score" id="B4-score"></span></button>
+      </div>
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'B5')">B5<br><span class="tab-score" id="B5-score"></span></button>
+      </div>
+    </div>
+    <!-- Tab Content -->
+    <div id="tab-content">
+      <div id="B1" class="tabcontent">
+        <h3>B1 Summary</h3>
+        <p id="B1-feedback"></p>
+      </div>
+      <div id="B2" class="tabcontent">
+        <h3>B2 Summary</h3>
+        <p id="B2-feedback"></p>
+      </div>
+      <div id="B3" class="tabcontent">
+        <h3>B3 Summary</h3>
+        <p id="B3-feedback"></p>
+      </div>
+      <div id="B4" class="tabcontent">
+        <h3>B4 Summary</h3>
+        <p id="B4-feedback"></p>
+      </div>
+      <div id="B5" class="tabcontent">
+        <h3>B5 Summary</h3>
+        <p id="B5-feedback"></p>
+      </div>
+    </div>
     <button id="restart-btn" class="restart-btn btn">Restart Quiz</button>
   </div>
 

@@ -13,12 +13,35 @@ const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 const progressBarFill = document.getElementById('progress-bar-fill');
 const resultContainer = document.getElementById('result-container');
-const scoreElement = document.getElementById('score');
+const percentageScoreElement = document.getElementById('percentage-score');
 const feedbackElement = document.getElementById('feedback');
+
+// Tab Elements
+const tabScores = {
+  B1: document.getElementById('B1-score'),
+  B2: document.getElementById('B2-score'),
+  B3: document.getElementById('B3-score'),
+  B4: document.getElementById('B4-score'),
+  B5: document.getElementById('B5-score'),
+};
+const tabFeedbacks = {
+  B1: document.getElementById('B1-feedback'),
+  B2: document.getElementById('B2-feedback'),
+  B3: document.getElementById('B3-feedback'),
+  B4: document.getElementById('B4-feedback'),
+  B5: document.getElementById('B5-feedback'),
+};
 
 let questions = [];
 let currentQuestionIndex = 0;
 let score = 0;
+let sectionScores = {
+  B1: 0,
+  B2: 0,
+  B3: 0,
+  B4: 0,
+  B5: 0,
+};
 
 startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', () => {
@@ -44,6 +67,9 @@ async function fetchQuestions() {
     sections.forEach((section) => {
       let sectionQuestions = data[section];
       sectionQuestions = shuffleArray(sectionQuestions).slice(0, 10);
+      sectionQuestions.forEach((question) => {
+        question.section = section; // Add section info to each question
+      });
       questions = questions.concat(sectionQuestions);
     });
 
@@ -59,6 +85,13 @@ async function startGame() {
   await fetchQuestions();
   currentQuestionIndex = 0;
   score = 0;
+  sectionScores = {
+    B1: 0,
+    B2: 0,
+    B3: 0,
+    B4: 0,
+    B5: 0,
+  };
   questionContainerElement.classList.remove('hide');
   resultContainer.classList.add('hide');
   showQuestion();
@@ -70,12 +103,9 @@ function showQuestion() {
   resetState();
   const currentQuestion = questions[currentQuestionIndex];
 
-  // Update topic heading based on current question index
-  // Remove redundant topic code
+  // Update topic heading
   const topicName = currentQuestion.topic;
   topicHeadingElement.innerText = topicName;
-
-  // Center the topic heading (handled in CSS)
 
   // Update question number
   questionNumberElement.innerText = `Q${currentQuestionIndex + 1}`;
@@ -112,6 +142,7 @@ function resetState() {
 function selectAnswer(e) {
   const selectedButton = e.target;
   const correct = selectedButton.dataset.correct === 'true';
+  const currentQuestion = questions[currentQuestionIndex];
 
   // Remove 'selected' class from any other buttons
   Array.from(answerButtonsElement.children).forEach((button) => {
@@ -123,6 +154,7 @@ function selectAnswer(e) {
 
   if (correct) {
     score++;
+    sectionScores[currentQuestion.section]++;
     // Only change the selected button to correct
     setStatusClass(selectedButton, true);
   } else {
@@ -147,9 +179,12 @@ function selectAnswer(e) {
 function showResult() {
   questionContainerElement.classList.add('hide');
   resultContainer.classList.remove('hide');
-  scoreElement.innerText = `You scored ${score} out of ${questions.length}!`;
 
-  const percentage = (score / questions.length) * 100;
+  const totalQuestions = questions.length;
+  const percentage = Math.round((score / totalQuestions) * 100);
+  percentageScoreElement.innerText = `${percentage}%`;
+
+  // Set feedback based on overall percentage
   let feedback = '';
   let color = '';
 
@@ -165,7 +200,57 @@ function showResult() {
   }
 
   feedbackElement.innerText = feedback;
-  scoreElement.style.color = color;
+  percentageScoreElement.style.color = color;
+
+  // Update section scores and tabs
+  updateSectionScores();
+}
+
+// Update Section Scores and Tabs
+function updateSectionScores() {
+  const sections = ['B1', 'B2', 'B3', 'B4', 'B5'];
+  sections.forEach((section) => {
+    const score = sectionScores[section];
+    const percentage = Math.round((score / 10) * 100);
+    const tabScoreElement = tabScores[section];
+    tabScoreElement.innerText = `${score}/10`;
+
+    // Set tab color based on percentage
+    const tabButton = tabScoreElement.parentElement;
+    let color = '';
+
+    if (percentage >= 80) {
+      color = '#28a745'; // Green
+    } else if (percentage >= 60) {
+      color = '#ffc107'; // Amber
+    } else {
+      color = '#dc3545'; // Red
+    }
+
+    tabButton.style.backgroundColor = color;
+
+    // Generate feedback for each section
+    const feedbacks = generateFeedbackForSection(section);
+    const feedbackElement = tabFeedbacks[section];
+    feedbackElement.innerHTML = feedbacks.join('<br>');
+  });
+}
+
+// Generate Feedback for a Section
+function generateFeedbackForSection(section) {
+  const weakAreas = []; // Collect up to 3 weak areas
+  const sectionQuestions = questions.filter((q) => q.section === section);
+  sectionQuestions.forEach((question) => {
+    if (question.userAnswerIncorrect && weakAreas.length < 3) {
+      weakAreas.push(`- Review section "${question.topic}" of AD B.`);
+    }
+  });
+
+  if (weakAreas.length === 0) {
+    return ['Great job! You did well in this section.'];
+  } else {
+    return weakAreas;
+  }
 }
 
 // Restart Game
@@ -198,16 +283,56 @@ function updateProgressBar() {
   progressBarFill.style.width = `${progressPercentage}%`;
 }
 
-function getTopicForQuestion(index) {
-  if (index < 10) {
-    return 'B1';
-  } else if (index < 20) {
-    return 'B2';
-  } else if (index < 30) {
-    return 'B3';
-  } else if (index < 40) {
-    return 'B4';
-  } else {
-    return 'B5';
+// Tab Functionality
+function openTab(evt, tabName) {
+  const tabcontent = document.getElementsByClassName('tabcontent');
+  for (let i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = 'none';
   }
+  const tablinks = document.getElementsByClassName('tablinks');
+  for (let i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove('active');
+  }
+  document.getElementById(tabName).style.display = 'block';
+  evt.currentTarget.classList.add('active');
+}
+
+// Modify selectAnswer to record incorrect answers
+function selectAnswer(e) {
+  const selectedButton = e.target;
+  const correct = selectedButton.dataset.correct === 'true';
+  const currentQuestion = questions[currentQuestionIndex];
+
+  // Remove 'selected' class from any other buttons
+  Array.from(answerButtonsElement.children).forEach((button) => {
+    button.classList.remove('selected');
+  });
+
+  // Mark selected button
+  selectedButton.classList.add('selected');
+
+  if (correct) {
+    score++;
+    sectionScores[currentQuestion.section]++;
+    // Only change the selected button to correct
+    setStatusClass(selectedButton, true);
+  } else {
+    // Mark question as incorrectly answered
+    currentQuestion.userAnswerIncorrect = true;
+
+    // Change the selected button to wrong
+    setStatusClass(selectedButton, false);
+    // Highlight the correct answer
+    const correctButton = Array.from(answerButtonsElement.children).find(
+      (button) => button.dataset.correct === 'true'
+    );
+    setStatusClass(correctButton, true);
+  }
+
+  // Disable all buttons
+  Array.from(answerButtonsElement.children).forEach((button) => {
+    button.disabled = true;
+  });
+
+  nextButton.classList.remove('hide');
 }
