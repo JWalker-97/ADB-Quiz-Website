@@ -158,6 +158,9 @@ function selectAnswer(e) {
     // Only change the selected button to correct
     setStatusClass(selectedButton, true);
   } else {
+    // Mark question as incorrectly answered
+    currentQuestion.userAnswerIncorrect = true;
+
     // Change the selected button to wrong
     setStatusClass(selectedButton, false);
     // Highlight the correct answer
@@ -204,6 +207,12 @@ function showResult() {
 
   // Update section scores and tabs
   updateSectionScores();
+
+  // Open the first tab by default
+  const firstTab = document.querySelector('.tablinks');
+  if (firstTab) {
+    firstTab.click();
+  }
 }
 
 // Update Section Scores and Tabs
@@ -287,52 +296,12 @@ function updateProgressBar() {
 function openTab(evt, tabName) {
   const tabcontent = document.getElementsByClassName('tabcontent');
   for (let i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = 'none';
+    tabcontent[i].classList.remove('active');
   }
   const tablinks = document.getElementsByClassName('tablinks');
   for (let i = 0; i < tablinks.length; i++) {
     tablinks[i].classList.remove('active');
   }
-  document.getElementById(tabName).style.display = 'block';
+  document.getElementById(tabName).classList.add('active');
   evt.currentTarget.classList.add('active');
-}
-
-// Modify selectAnswer to record incorrect answers
-function selectAnswer(e) {
-  const selectedButton = e.target;
-  const correct = selectedButton.dataset.correct === 'true';
-  const currentQuestion = questions[currentQuestionIndex];
-
-  // Remove 'selected' class from any other buttons
-  Array.from(answerButtonsElement.children).forEach((button) => {
-    button.classList.remove('selected');
-  });
-
-  // Mark selected button
-  selectedButton.classList.add('selected');
-
-  if (correct) {
-    score++;
-    sectionScores[currentQuestion.section]++;
-    // Only change the selected button to correct
-    setStatusClass(selectedButton, true);
-  } else {
-    // Mark question as incorrectly answered
-    currentQuestion.userAnswerIncorrect = true;
-
-    // Change the selected button to wrong
-    setStatusClass(selectedButton, false);
-    // Highlight the correct answer
-    const correctButton = Array.from(answerButtonsElement.children).find(
-      (button) => button.dataset.correct === 'true'
-    );
-    setStatusClass(correctButton, true);
-  }
-
-  // Disable all buttons
-  Array.from(answerButtonsElement.children).forEach((button) => {
-    button.disabled = true;
-  });
-
-  nextButton.classList.remove('hide');
 }

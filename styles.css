@@ -216,6 +216,7 @@ header h1 {
   overflow: hidden;
 }
 
+/* Tabs */
 .tabs {
   display: flex;
   flex-direction: column;
@@ -252,6 +253,7 @@ header h1 {
   color: #cccccc;
 }
 
+/* Summary Box */
 #summary-box {
   background-color: #2e2e2e;
   padding: 20px;
@@ -271,6 +273,12 @@ header h1 {
 .tabcontent h3 {
   color: #ff4500;
   margin-top: 0;
+}
+
+/* Feedback Paragraph */
+#feedback {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 /* Fire Theme Decorations */
