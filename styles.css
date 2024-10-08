@@ -175,7 +175,7 @@ header h1 {
 #summary-content {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center; /* Center vertically */
   margin-bottom: 20px;
 }
 
@@ -184,7 +184,7 @@ header h1 {
   position: relative;
   width: 200px;
   height: 200px;
-  margin-right: 20px;
+  margin-right: 40px; /* Increased space */
 }
 
 #flame-background {
@@ -208,12 +208,18 @@ header h1 {
   text-shadow: 2px 2px 4px #000000;
 }
 
+#total-score {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
 /* Tabs and Summary */
 #tabs-and-summary {
   display: flex;
-  box-shadow: 0 0 10px #ff4500;
   border-radius: 8px;
   overflow: hidden;
+  /* Glow will be set dynamically based on the selected tab */
 }
 
 /* Tabs */
@@ -244,7 +250,7 @@ header h1 {
 }
 
 .tablinks.active {
-  background-color: #444444;
+  background-color: #2e2e2e; /* Same as the summary box */
 }
 
 .tab-score {
@@ -370,5 +376,19 @@ body::before {
   #cover-image {
     width: 90%;
     height: auto;
+  }
+
+  /* Adjust overall score section */
+  #overall-score {
+    width: 150px;
+    height: 150px;
+  }
+
+  #percentage-score {
+    font-size: 36px;
+  }
+
+  #total-score {
+    font-size: 20px;
   }
 }

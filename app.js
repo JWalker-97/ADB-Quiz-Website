@@ -42,6 +42,7 @@ let sectionScores = {
   B4: 0,
   B5: 0,
 };
+let sectionColors = {}; // Stores the color for each section based on score
 
 startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', () => {
@@ -92,6 +93,7 @@ async function startGame() {
     B4: 0,
     B5: 0,
   };
+  sectionColors = {}; // Reset section colors
   questionContainerElement.classList.remove('hide');
   resultContainer.classList.add('hide');
   showQuestion();
@@ -187,6 +189,10 @@ function showResult() {
   const percentage = Math.round((score / totalQuestions) * 100);
   percentageScoreElement.innerText = `${percentage}%`;
 
+  // Set total score
+  const totalScoreElement = document.getElementById('total-score');
+  totalScoreElement.innerText = `Total: ${score} / ${totalQuestions}`;
+
   // Set feedback based on overall percentage
   let feedback = '';
   let color = '';
@@ -236,6 +242,8 @@ function updateSectionScores() {
       color = '#dc3545'; // Red
     }
 
+    sectionColors[section] = color; // Store color for each section
+
     tabButton.style.backgroundColor = color;
 
     // Generate feedback for each section
@@ -247,20 +255,36 @@ function updateSectionScores() {
 
 // Generate Feedback for a Section
 function generateFeedbackForSection(section) {
-  const weakAreas = []; // Collect up to 3 weak areas
+  const weakAreas = new Set(); // Use a Set to avoid duplicates
   const sectionQuestions = questions.filter((q) => q.section === section);
   sectionQuestions.forEach((question) => {
-    if (question.userAnswerIncorrect && weakAreas.length < 3) {
-      weakAreas.push(`- Review section "${question.topic}" of AD B.`);
+    if (question.userAnswerIncorrect && weakAreas.size < 3) {
+      const adbSection = topicToADBSection[question.topic] || question.topic;
+      weakAreas.add(`- Review ${adbSection}`);
     }
   });
 
-  if (weakAreas.length === 0) {
+  if (weakAreas.size === 0) {
     return ['Great job! You did well in this section.'];
   } else {
-    return weakAreas;
+    return Array.from(weakAreas);
   }
 }
+
+// Map topics to ADB sections
+const topicToADBSection = {
+  // Example mappings for B1 topics
+  'Fire detection and alarm systems': 'Section 1: Fire detection and alarm systems',
+  'Design for horizontal escape': 'Section 2: Design for horizontal escape',
+  'Design for vertical escape': 'Section 3: Design for vertical escape',
+  // Add mappings for other topics accordingly
+
+  // Example mappings for B2 topics
+  'Internal fire spread (linings)': 'Section 4: Internal fire spread (linings)',
+  // Continue adding mappings for B3, B4, B5
+
+  // Ensure that all topics used in the questions are mapped here
+};
 
 // Restart Game
 function restartGame() {
@@ -301,7 +325,18 @@ function openTab(evt, tabName) {
   const tablinks = document.getElementsByClassName('tablinks');
   for (let i = 0; i < tablinks.length; i++) {
     tablinks[i].classList.remove('active');
+    // Reset tab background color
+    const section = tablinks[i].innerText.split('\n')[0];
+    tablinks[i].style.backgroundColor = sectionColors[section];
   }
   document.getElementById(tabName).classList.add('active');
   evt.currentTarget.classList.add('active');
+
+  // Set the box-shadow color of #tabs-and-summary to the section color
+  const tabsAndSummary = document.getElementById('tabs-and-summary');
+  const color = sectionColors[tabName];
+  tabsAndSummary.style.boxShadow = `0 0 10px ${color}`;
+
+  // Set active tab background to match summary box
+  evt.currentTarget.style.backgroundColor = '#2e2e2e';
 }
